@@ -1,0 +1,71 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'inertia-angular-velocity-momentum.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{409.01756304bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.97831293)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{inertia-angular-velocity-momentum.pdf}}%
+    \put(0.19362483,0.95602248){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\Large \bfseries z}}}%
+    \put(0,0.49270594){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\Large \bfseries x}}}%
+    \put(0.46825605,0.68731864){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\Large \bfseries y}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{inertia-angular-velocity-momentum.pdf}}%
+    \put(0.69546881,0.7787704){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\Large \bfseries z}}}%
+    \put(0.501844,0.31545388){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\Large \bfseries x}}}%
+    \put(0.97009998,0.51006653){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\Large \bfseries y}}}%
+    \put(0.1823801,-0.15294179){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.5571653\unitlength}\raggedright \end{minipage}}}%
+    \put(0.0069152,0.47393537){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.45738931\unitlength}\raggedright \textbf{(A)}\\ In this configuration, the principal axis is point along some direction while angular velocity ($\vec{\omega}$) is pointing along the z axis. Because of the assymetry of the molecule and the "poorly" chosen angular velocity ($\vec{\omega}$) direction, the angular momentum ($L$) points in another direction.\\ The angular momentum ($\vec{L}$) can be broken down into components using a \end{minipage}}}%
+    \put(0.51464448,0.96662674){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.48307431\unitlength}\raggedright \textbf{(B)}\\ In this configuration, the principal axis and angular velocity ($\vec{\omega}$) are both pointing along the z axis. This results in the angular momentum ($\vec{L}$) pointing along the z axis as well.\end{minipage}}}%
+    \put(0.29671475,1.01695659){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.41772571\unitlength}\raggedright \end{minipage}}}%
+    \put(0.60827056,0.31778592){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.36344529\unitlength}\raggedright The angular velocity ($\vec{\omega}$) points along the z axis in both configuration. The differences between the configuration is where the principal axis points.\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{inertia-angular-velocity-momentum.pdf}}%
+    \put(0.50436702,0.11145318){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.42478919\unitlength}\raggedright Angular momentum\end{minipage}}}%
+    \put(0.50436785,0.07292574){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.35168588\unitlength}\raggedright Angular velocity\end{minipage}}}%
+    \put(0.5017177,0.03534659){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.56104873\unitlength}\raggedright Principal axis of Molecule\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{inertia-angular-velocity-momentum.pdf}}%
+  \end{picture}%
+\endgroup%

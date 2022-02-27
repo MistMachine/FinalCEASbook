@@ -1,0 +1,70 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'CEAS-cartoon.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{484.6613356bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.58638567)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{CEAS-cartoon.pdf}}%
+    \put(0.43261684,0.56757421){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sample Length}}}%
+    \put(0.18132695,0.56894828){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.16340474\unitlength}\raggedright Input Mirror\end{minipage}}}%
+    \put(0.73807021,0.57711852){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.18674827\unitlength}\raggedright Output Mirror\end{minipage}}}%
+    \put(0.29746101,0.34064675){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.49254861\unitlength}\raggedright Optical Power Buildup of Resonant Beam\end{minipage}}}%
+    \put(0.07558018,0.33985168){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.1391648\unitlength}\raggedright Resonant Input Beam\end{minipage}}}%
+    \put(0.81989113,0.37752534){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15515747\unitlength}\raggedright Absorped Resonant Output Beam\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{CEAS-cartoon.pdf}}%
+    \put(0.47688916,0.21913043){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.17741085\unitlength}\raggedright Sample\end{minipage}}}%
+    \put(0.64185595,0.5123026){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.08135282\unitlength}\raggedright \end{minipage}}}%
+    \put(0.0032245,0.51284152){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.05135577\unitlength}\raggedright a)\end{minipage}}}%
+    \put(-0.0015984,0.28057328){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.03881371\unitlength}\raggedright b)\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{CEAS-cartoon.pdf}}%
+    \put(0.49276722,0.01557144){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$L_{cavity}$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{CEAS-cartoon.pdf}}%
+    \put(0.48042169,0.4492332){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.18943425\unitlength}\raggedright Sample\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{CEAS-cartoon.pdf}}%
+  \end{picture}%
+\endgroup%

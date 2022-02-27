@@ -1,0 +1,88 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'angular-velocity-momentum.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{531.88070043bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.17721059)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{angular-velocity-momentum.pdf}}%
+    \put(0.52173355,0.37052743){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.32666393\unitlength}\raggedright Angular momentum\end{minipage}}}%
+    \put(0.52173419,0.34089974){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.27044731\unitlength}\raggedright Angular velocity\end{minipage}}}%
+    \put(0.51969622,0.31200128){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.37618937\unitlength}\raggedright Principal axis of Object\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{angular-velocity-momentum.pdf}}%
+    \put(0.52173355,0.40846801){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.27361212\unitlength}\raggedright Direction of Finger\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{angular-velocity-momentum.pdf}}%
+    \put(0.01718751,1.058128){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.2598897\unitlength}\raggedright $\textbf{I}_{\text{ball}}=\text{I}_0 \begin{pmatrix}\\ 1 & 0 & 0\\\\ 0 & 1 & 0\\\\ 0 & 0 & 1\\ \end{pmatrix}$\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{angular-velocity-momentum.pdf}}%
+    \put(0.11196805,0.42038227){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\Large $\hat{x}$}}}%
+    \put(0.2409437,0.83837174){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\Large $\hat{z}$}}}%
+    \put(0.95661031,0.56007441){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\Large $\hat{y}$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{angular-velocity-momentum.pdf}}%
+    \put(0.35707052,0.76150327){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.20875566\unitlength}\raggedright x and y plane\end{minipage}}}%
+    \put(0.37365489,0.08009334){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.42683155\unitlength}\raggedright \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{angular-velocity-momentum.pdf}}%
+    \put(0.29540246,0.20155796){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.49678446\unitlength}\raggedright energy plot with respect to angular velocity\\ function plotter doesnt seem to work\\ might have to do this on windows\end{minipage}}}%
+    \put(0.05873438,0.28163295){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.34857907\unitlength}\raggedright $E_\text{rot}$\end{minipage}}}%
+    \put(0.93791964,0.02718024){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.04062905\unitlength}\raggedright $\omega$\end{minipage}}}%
+    \put(0.07305026,0.02836582){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.06521038\unitlength}\raggedright 0\end{minipage}}}%
+    \put(0.06183074,0.89107323){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.07588117\unitlength}\raggedright \end{minipage}}}%
+    \put(0.48261269,0.54655133){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.28008329\unitlength}\raggedright \large $\braket{0,-\omega_y,0}$\end{minipage}}}%
+    \put(-0.12905781,0.29469472){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.19275704\unitlength}\raggedright \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{angular-velocity-momentum.pdf}}%
+    \put(0.01605626,0.41408787){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.36685528\unitlength}\raggedright \large $\braket{\omega_x,0,0}$\end{minipage}}}%
+    \put(0.73077208,0.96490112){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.21385163\unitlength}\raggedright \large $\braket{0,0,\omega_z}$\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{angular-velocity-momentum.pdf}}%
+    \put(0.35136627,1.07753722){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29684666\unitlength}\raggedright \large $\braket{\omega_x,-\omega_y,\omega_z}$\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{angular-velocity-momentum.pdf}}%
+    \put(0.00610551,1.28114984){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.19918807\unitlength}\raggedright \end{minipage}}}%
+    \put(0.23612029,1.16258551){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.24898506\unitlength}\raggedright \bfseries \Large (A)\end{minipage}}}%
+    \put(0.46139249,0.71122784){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15176231\unitlength}\raggedright \bfseries \Large (C)\end{minipage}}}%
+    \put(0.05884918,0.71122784){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15176231\unitlength}\raggedright \bfseries \Large (B)\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{angular-velocity-momentum.pdf}}%
+    \put(0.71287524,0.71122784){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15176231\unitlength}\raggedright \bfseries \Large (D)\end{minipage}}}%
+  \end{picture}%
+\endgroup%

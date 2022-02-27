@@ -1,0 +1,67 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'cav-types.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{438.23001149bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.40874151)%
+    \put(0.40056421,0.37552426){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.2166769\unitlength}\raggedright  \end{minipage}}}%
+    \put(0.38488975,0.36077187){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.22220913\unitlength}\raggedright  \end{minipage}}}%
+    \put(0.3996422,0.37368024){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.21206679\unitlength}\raggedright  \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{cav-types.pdf}}%
+    \put(0.39134396,0.41159468){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.46562493\unitlength}\raggedright Symmetric Confocal\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{cav-types.pdf}}%
+    \put(0.39134396,0.36353794){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.46562493\unitlength}\raggedright Symmetric Confocal\end{minipage}}}%
+    \put(0.43392857,0.29620327){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Fabry Perot}}}%
+    \put(0.61245033,0.04632267){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Hemispherical}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{cav-types.pdf}}%
+    \put(0.70501909,0.02051109){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.21189142\unitlength}\raggedright Concave Convex\end{minipage}}}%
+    \put(0.42545906,0.26949114){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Plane Parallel}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{cav-types.pdf}}%
+    \put(0.47432657,0.01316672){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Focus}}}%
+  \end{picture}%
+\endgroup%

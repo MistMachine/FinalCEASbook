@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="297mm"
+   width="210mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg6612"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="drawing.svg">
+  <defs
+     id="defs6618" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     id="namedview6616"
+     showgrid="false"
+     inkscape:zoom="1.2685914"
+     inkscape:cx="268.53483"
+     inkscape:cy="737.78671"
+     inkscape:window-x="1985"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6612" />
+  <metadata
+     id="metadata6614">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot6687"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
+       id="flowRegion6689"><rect
+         id="rect6691"
+         width="454.04691"
+         height="177.36208"
+         x="24.436552"
+         y="48.098705" /></flowRegion><flowPara
+       id="flowPara6693">$\vec{\omega} $ $\vec{L} $ </flowPara></flowRoot>  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="154.50208"
+     y="316.90079"
+     id="text6695"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan6697"
+       x="154.50208"
+       y="316.90079">				\begin{pmatrix}</tspan><tspan
+       sodipodi:role="line"
+       x="154.50208"
+       y="335.65079"
+       id="tspan6699">					I_{xx} &amp; I_{xy} &amp; I_{xz} \\</tspan><tspan
+       sodipodi:role="line"
+       x="154.50208"
+       y="354.40079"
+       id="tspan6701">					I_{yx} &amp; I_{xy} &amp; I_{yz} \\</tspan><tspan
+       sodipodi:role="line"
+       x="154.50208"
+       y="373.15079"
+       id="tspan6703">					I_{zx} &amp; I_{zy} &amp; I_{zz}</tspan><tspan
+       sodipodi:role="line"
+       x="154.50208"
+       y="391.90079"
+       id="tspan6705">				\end{pmatrix} </tspan></text>
+</svg>

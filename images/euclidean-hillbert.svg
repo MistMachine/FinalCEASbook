@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="297mm"
+   width="210mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="euclidean-hillbert.svg">
+  <defs
+     id="defs8">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker3817"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Sstart">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.2,0)"
+         style="fill:#008e00;fill-opacity:1;fill-rule:evenodd;stroke:#008e00;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         id="path3819"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="1.7940591"
+     inkscape:cx="235.96337"
+     inkscape:cy="859.56752"
+     inkscape:window-x="1985"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     inkscape:connector-curvature="0"
+     d="m 44.349444,261.49605 c 91.735236,-91.7352 91.735236,-91.7352 91.735236,-91.7352 m 128.15207,0.37555 c -129.73318,0 -129.73318,0 -129.73318,0 m 1.20588,-128.568947 c 0,129.733187 0,129.733187 0,129.733187"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.38716936px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="path11263" />
+  <text
+     sodipodi:linespacing="125%"
+     id="text4655"
+     y="35.560062"
+     x="131.8163"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       y="35.560062"
+       x="131.8163"
+       id="tspan4657"
+       sodipodi:role="line">\bfseries $\hat{z}$</tspan></text>
+  <text
+     sodipodi:linespacing="125%"
+     id="text4659"
+     y="278.35294"
+     x="36.042065"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       y="278.35294"
+       x="36.042065"
+       id="tspan4661"
+       sodipodi:role="line">\bfseries $\hat{x}$</tspan></text>
+  <text
+     sodipodi:linespacing="125%"
+     id="text4663"
+     y="172.94087"
+     x="267.7684"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     xml:space="preserve"><tspan
+       y="172.94087"
+       x="267.7684"
+       id="tspan4665"
+       sodipodi:role="line">\bfseries $\hat{y}$</tspan></text>
+  <path
+     id="path3237"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.38716936px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 333.6467,261.49605 c 91.73524,-91.7352 91.73524,-91.7352 91.73524,-91.7352 m 128.15207,0.37555 c -129.73318,0 -129.73318,0 -129.73318,0 m 1.20588,-128.568947 c 0,129.733187 0,129.733187 0,129.733187"
+     inkscape:connector-curvature="0" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="416.65439"
+     y="35.560062"
+     id="text3239"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3241"
+       x="416.65439"
+       y="35.560062">$\ket{k}$</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:9.03423977px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="926.24146"
+     y="104.15928"
+     id="text3247"
+     sodipodi:linespacing="125%"
+     transform="scale(0.60228262,1.6603501)"><tspan
+       sodipodi:role="line"
+       id="tspan3249"
+       x="926.24146"
+       y="104.15928">$\ket{j}$</tspan></text>
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3251"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(29.091789,-21.726811)"><flowRegion
+       id="flowRegion3253"><rect
+         id="rect3255"
+         width="85.588417"
+         height="33.171219"
+         x="298.20645"
+         y="289.84552" /></flowRegion><flowPara
+       id="flowPara3257">$\ket{i}$</flowPara></flowRoot>  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2,1;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 190.87964,225.11014 246.69078,169.299"
+     id="path3244"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 135.72574,169.44815 190.90787,98.937649"
+     id="path3250"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2,1;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 190.62917,99.42537 0,125.7623"
+     id="path3252"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:2,1;stroke-dashoffset:0"
+     d="m 190.07178,224.90897 -108.692075,0"
+     id="path3254"
+     inkscape:connector-curvature="0" />
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3256"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(-7.8035333,6.92625e-4)"><flowRegion
+       id="flowRegion3258"><rect
+         id="rect3260"
+         width="127.85653"
+         height="113.45952"
+         x="164.94673"
+         y="80.023872" /></flowRegion><flowPara
+       id="flowPara3262">$\vec{r} = a\hat{x} + b\hat{y} + c\hat{z}$</flowPara></flowRoot>  <path
+     inkscape:connector-curvature="0"
+     id="path3264"
+     d="M 480.72516,225.11014 536.5363,169.299"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 1;stroke-dashoffset:0;stroke-opacity:1" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path3266"
+     d="M 425.57126,169.44815 480.75339,98.937649"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path3268"
+     d="m 480.47469,99.42537 0,125.7623"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 1;stroke-dashoffset:0;stroke-opacity:1" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path3270"
+     d="m 479.9173,224.90897 -108.69207,0"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2, 1;stroke-dashoffset:0;stroke-opacity:1" />
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3272"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(3.0806746,13.006552)"><flowRegion
+       id="flowRegion3274"><rect
+         id="rect3276"
+         width="137.55415"
+         height="65.821053"
+         x="443.79935"
+         y="67.017319" /></flowRegion><flowPara
+       id="flowPara3278">$\ket{\psi} = a\ket{i} + b\ket{j} + c\ket{k} $</flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3280"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(12.262695,-2.2295811)"><flowRegion
+       id="flowRegion3282"><rect
+         id="rect3284"
+         width="29.560341"
+         height="24.43655"
+         x="117.84724"
+         y="231.76698" /></flowRegion><flowPara
+       id="flowPara3286">a</flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3288"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(-2.229581,-1.9508833)"><flowRegion
+       id="flowRegion3290"><rect
+         id="rect3292"
+         width="23.648277"
+         height="17.736208"
+         x="225.84105"
+         y="196.29457" /></flowRegion><flowPara
+       id="flowPara3294">b</flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3296"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(23.689297,-6.1313476)"><flowRegion
+       id="flowRegion3298"><rect
+         id="rect3300"
+         width="18.130346"
+         height="19.706898"
+         x="170.66173"
+         y="154.51595" /></flowRegion><flowPara
+       id="flowPara3302">c</flowPara></flowRoot>  <flowRoot
+     transform="translate(301.16581,-2.2295811)"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="flowRoot3332"
+     xml:space="preserve"><flowRegion
+       id="flowRegion3334"><rect
+         y="231.76698"
+         x="117.84724"
+         height="24.43655"
+         width="29.560341"
+         id="rect3336" /></flowRegion><flowPara
+       id="flowPara3338">a</flowPara></flowRoot>  <flowRoot
+     transform="translate(286.67354,-1.9508833)"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="flowRoot3340"
+     xml:space="preserve"><flowRegion
+       id="flowRegion3342"><rect
+         y="196.29457"
+         x="225.84105"
+         height="17.736208"
+         width="23.648277"
+         id="rect3344" /></flowRegion><flowPara
+       id="flowPara3346">b</flowPara></flowRoot>  <flowRoot
+     transform="translate(312.59242,-6.1313476)"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="flowRoot3348"
+     xml:space="preserve"><flowRegion
+       id="flowRegion3350"><rect
+         y="154.51595"
+         x="170.66173"
+         height="19.706898"
+         width="18.130346"
+         id="rect3352" /></flowRegion><flowPara
+       id="flowPara3354">c</flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3356"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(14.492276,52.395152)"><flowRegion
+       id="flowRegion3358"><rect
+         id="rect3360"
+         width="143.46622"
+         height="70.550697"
+         x="27.983795"
+         y="-0.38026795" /></flowRegion><flowPara
+       id="flowPara3364">\Large \textbf{(A)}</flowPara></flowRoot>  <flowRoot
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="flowRoot3366"
+     xml:space="preserve"
+     transform="translate(296.78588,52.395152)"><flowRegion
+       id="flowRegion3368"><rect
+         y="-0.38026795"
+         x="27.983795"
+         height="57.719002"
+         width="160.67584"
+         id="rect3370" /></flowRegion><flowPara
+       id="flowPara3374">\Large \textbf{(B)}</flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3376"
+     style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:15px;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;text-align:start;writing-mode:lr"><flowRegion
+       id="flowRegion3378"><rect
+         id="rect3380"
+         width="383.49622"
+         height="55.573452"
+         x="25.224829"
+         y="256.59769" /></flowRegion><flowPara
+       id="flowPara3382" /></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3388"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="matrix(1,0,0,0.62966896,-147.70973,155.18701)"><flowRegion
+       id="flowRegion3390"><rect
+         id="rect3392"
+         width="497.75391"
+         height="111.47905"
+         x="209.58061"
+         y="292.0751" /></flowRegion><flowPara
+       id="flowPara3394">The vector spaces of (A) and (B) both behave identically. The projection of the vectors $\vec{r}$ and $\ket{\psi}$ along a component axis can taken by taking the inner product of the vector along with the desired component. The angles and length of vectors can also be taken as both posses inner product structure.</flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3396"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(-153.84109,-94.560718)"><flowRegion
+       id="flowRegion3398"><rect
+         id="rect3400"
+         width="358.40515"
+         height="39.575058"
+         x="245.25391"
+         y="375.68439" /></flowRegion><flowPara
+       id="flowPara3402">$\hat{x} \cdot \vec{r} = b$</flowPara></flowRoot>  <flowRoot
+     transform="translate(143.97132,-94.560718)"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="flowRoot3404"
+     xml:space="preserve"><flowRegion
+       id="flowRegion3406"><rect
+         y="375.68439"
+         x="245.25391"
+         height="39.575058"
+         width="358.40515"
+         id="rect3408" /></flowRegion><flowPara
+       id="flowPara3410">$\braket{i|\psi} = b$</flowPara></flowRoot>  <flowRoot
+     transform="translate(-153.84109,-71.707518)"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="flowRoot3412"
+     xml:space="preserve"><flowRegion
+       id="flowRegion3414"><rect
+         y="375.68439"
+         x="245.25391"
+         height="37.902889"
+         width="263.64795"
+         id="rect3416" /></flowRegion><flowPara
+       id="flowPara3418">$\vec{r} \cdot \vec{r} = a^2 + b^2 + c^2 = |r|^2$</flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3420"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(143.97132,-71.707518)"><flowRegion
+       id="flowRegion3422"><rect
+         id="rect3424"
+         width="245.25392"
+         height="59.6413"
+         x="245.25391"
+         y="375.68439" /></flowRegion><flowPara
+       id="flowPara3426">$\braket{\psi|\psi} = a^2 + b^2 + c^2 = 1$</flowPara></flowRoot>  <flowRoot
+     transform="translate(-153.84109,-117.41393)"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="flowRoot3428"
+     xml:space="preserve"><flowRegion
+       id="flowRegion3430"><rect
+         y="375.68439"
+         x="245.25391"
+         height="20.623634"
+         width="357.29037"
+         id="rect3432" /></flowRegion><flowPara
+       id="flowPara3434">$\hat{x} \cdot \hat{y} = \delta_{xy}$</flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3436"
+     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(143.97132,-117.41393)"><flowRegion
+       id="flowRegion3438"><rect
+         id="rect3440"
+         width="358.40515"
+         height="39.575058"
+         x="245.25391"
+         y="375.68439" /></flowRegion><flowPara
+       id="flowPara3442">$\braket{i|j} = \delta_{ij}$</flowPara></flowRoot></svg>

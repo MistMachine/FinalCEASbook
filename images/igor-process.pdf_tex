@@ -1,0 +1,61 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'igor-process.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{469.1524565bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.37852456)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{igor-process.pdf}}%
+    \put(0.31719077,0.72921777){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.09987623\unitlength}\raggedright Raw Input Data from Labview\end{minipage}}}%
+    \put(-0.00070773,1.2103285){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.16930225\unitlength}\raggedright Modified before fitting with Wavenumbers\end{minipage}}}%
+    \put(0.25263668,0.24932503){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15712226\unitlength}\raggedright Raw Wavemeter data\end{minipage}}}%
+    \put(0.56688113,0.24932504){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.20827831\unitlength}\raggedright Fitted Wavenumber against applied piezo stroke\end{minipage}}}%
+    \put(0.85067556,0.80960588){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14128817\unitlength}\raggedright Processed x or y input from Lock in Amplifier and Powermeter data fitted with Wavemeter fit.\end{minipage}}}%
+    \put(0.85432955,1.27122858){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.22533039\unitlength}\raggedright \end{minipage}}}%
+    \put(0.86407358,1.29071662){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.17417431\unitlength}\raggedright Smoothing appplied to reduce noise \end{minipage}}}%
+  \end{picture}%
+\endgroup%

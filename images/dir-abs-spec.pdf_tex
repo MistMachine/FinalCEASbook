@@ -1,0 +1,63 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'dir-abs-spec.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{294.97703546bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.51240388)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{dir-abs-spec.pdf}}%
+    \put(0.32695502,0.52170229){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.60053102\unitlength}\raggedright Direct Absorption Spectroscopy\end{minipage}}}%
+    \put(0.02765811,0.07905283){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15788154\unitlength}\raggedright Input Beam\end{minipage}}}%
+    \put(0.29886568,0.07794294){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.40487419\unitlength}\raggedright Absorption Attenuation of Beam\end{minipage}}}%
+    \put(0.81222279,0.07794228){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.20728002\unitlength}\raggedright Attenuated Beam\end{minipage}}}%
+    \put(0.00053736,0.3715695){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.16175594\unitlength}\raggedright I=$I_o$\end{minipage}}}%
+    \put(0.46720808,0.21872474){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.236338\unitlength}\raggedright Sample\end{minipage}}}%
+    \put(0.4625588,0.44518301){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.18015935\unitlength}\raggedright Length\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{dir-abs-spec.pdf}}%
+    \put(0.84181972,0.37684221){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14733805\unitlength}\raggedright $I=I_{o} e^{-\alpha L}$\end{minipage}}}%
+  \end{picture}%
+\endgroup%

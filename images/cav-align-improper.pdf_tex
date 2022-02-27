@@ -1,0 +1,74 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'cav-align-improper.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{495.67079533bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.74622068)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{cav-align-improper.pdf}}%
+    \put(0.40526936,0.35230104){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.23884783\unitlength}\raggedright Mirror Holder\end{minipage}}}%
+    \put(0.43213574,0.68490431){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.25678177\unitlength}\raggedright Cross Section\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{cav-align-improper.pdf}}%
+    \put(0.86393862,0.4884457){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.1452577\unitlength}\raggedright Output Mirror Axis\end{minipage}}}%
+    \put(0.68751888,0.58554417){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.16059046\unitlength}\raggedright Miss Aligned Input Beams\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{cav-align-improper.pdf}}%
+    \put(0.66057786,0.13729097){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.1452577\unitlength}\raggedright Input Mirror Axis\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{cav-align-improper.pdf}}%
+    \put(0.07895962,0.77695913){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.0651354\unitlength}\raggedright \end{minipage}}}%
+    \put(0.32006925,0.74874409){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.37987397\unitlength}\raggedright Improper Alignement\end{minipage}}}%
+    \put(0.09105785,0.62384772){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.21506067\unitlength}\raggedright Printed Circle\end{minipage}}}%
+    \put(0.41117282,0.63445502){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.17444856\unitlength}\raggedright Tilted Output Mirror\end{minipage}}}%
+    \put(0.33536106,0.49587435){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.13287436\unitlength}\raggedright Transmitted Beam\end{minipage}}}%
+    \put(0.62311967,0.47467967){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.13287436\unitlength}\raggedright Back \\ Reflection\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{cav-align-improper.pdf}}%
+    \put(0.28704704,0.28123841){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.13142361\unitlength}\raggedright Tilted Input Mirror\end{minipage}}}%
+    \put(-0.00103435,0.67723853){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{a) Cavity Output End}}}%
+    \put(-0.00183227,0.323317){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.27668136\unitlength}\raggedright b) Cavity Input Mirror\end{minipage}}}%
+    \put(0.04840938,0.30026024){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{ }}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{cav-align-improper.pdf}}%
+  \end{picture}%
+\endgroup%

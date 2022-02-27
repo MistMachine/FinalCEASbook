@@ -1,0 +1,96 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'gaus-beam-prop.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{516.7227293bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.12072553)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{gaus-beam-prop.pdf}}%
+    \put(0.46998076,1.02835945){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x}}}%
+    \put(0.40033995,1.10639244){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{y}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{gaus-beam-prop.pdf}}%
+    \put(0.17037083,1.02835945){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x}}}%
+    \put(0.17037083,1.02835945){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x}}}%
+    \put(0.10073003,1.10639254){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{y}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{gaus-beam-prop.pdf}}%
+    \put(0.75590623,1.02835945){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x}}}%
+    \put(0.68626538,1.10639244){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{y}}}%
+    \put(0.75590623,1.02835945){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x}}}%
+    \put(0.68626538,1.10639244){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{y}}}%
+    \put(-0.00318416,1.07119592){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\bfseries (A)}}}}%
+    \put(-0.00318416,0.88468515){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\bfseries (B)}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{gaus-beam-prop.pdf}}%
+    \put(0.12350806,0.91478797){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{I}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{gaus-beam-prop.pdf}}%
+    \put(0.68893545,0.91478797){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{I}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{gaus-beam-prop.pdf}}%
+    \put(0.92538406,0.54320152){\color[rgb]{0,0,0}\rotatebox{-180}{\makebox(0,0)[lb]{\smash{x}}}}%
+    \put(0.9852703,0.60118395){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{y}}}%
+    \put(-0.0029925,0.66751281){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\bfseries (C)}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{gaus-beam-prop.pdf}}%
+    \put(0.76985229,0.49445298){\color[rgb]{0,0,0}\rotatebox{-180}{\makebox(0,0)[lb]{\smash{x}}}}%
+    \put(0.84774112,0.63402662){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{I}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{gaus-beam-prop.pdf}}%
+    \put(0.68267326,0.57417644){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{z}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{gaus-beam-prop.pdf}}%
+    \put(0.4132731,0.62722873){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.06700879\unitlength}\raggedright 2\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{gaus-beam-prop.pdf}}%
+    \put(0.38505227,0.73589943){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.11224586\unitlength}\raggedright focus\\ z=0\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{gaus-beam-prop.pdf}}%
+    \put(0.49380032,0.76368025){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.33153018\unitlength}\raggedright $\omega (z) = \omega_o \sqrt{1 + \dfrac{z^2}{z_o^2}}$\end{minipage}}}%
+    \put(0.28268553,0.47608739){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.2609855\unitlength}\raggedright $R(z)=z \left[1+ \dfrac{z^2}{z_o^2} \right]$\end{minipage}}}%
+    \put(-0.00318416,0.33628653){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\bfseries (D)}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{gaus-beam-prop.pdf}}%
+    \put(0.76298832,0.1843931){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{z}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{gaus-beam-prop.pdf}}%
+    \put(0.2072613,0.21975055){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.07642969\unitlength}\raggedright $-z_o$\end{minipage}}}%
+    \put(0.56295826,0.18007499){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.07642969\unitlength}\raggedright $z_o$\end{minipage}}}%
+    \put(0.41810184,0.13922496){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14758843\unitlength}\raggedright $R(2z_o)$\end{minipage}}}%
+    \put(0.31443857,0.26665862){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14758843\unitlength}\raggedright $R(2z_o)$\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{gaus-beam-prop.pdf}}%
+  \end{picture}%
+\endgroup%

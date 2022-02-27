@@ -1,0 +1,81 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'euclidean-hillbert.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{451.27309177bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.67987752)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{euclidean-hillbert.pdf}}%
+    \put(0.16978497,0.65967426){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\bfseries $\hat{z}$}}}%
+    \put(0,0.22926017){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\bfseries $\hat{x}$}}}%
+    \put(0.41079575,0.41613072){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\bfseries $\hat{y}$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{euclidean-hillbert.pdf}}%
+    \put(0.67473524,0.65967426){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\ket{k}$}}}%
+    \put(0.92505771,0.41613073){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\ket{j}$}}}%
+    \put(0.51632802,0.24740302){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15172792\unitlength}\raggedright $\ket{i}$\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{euclidean-hillbert.pdf}}%
+    \put(0.21468354,0.58084926){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.22665924\unitlength}\raggedright $\vec{r} = a\hat{x} + b\hat{y} + c\hat{z}$\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{euclidean-hillbert.pdf}}%
+    \put(0.72831811,0.58085049){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.24385087\unitlength}\raggedright $\ket{\psi} = a\ket{i} + b\ket{j} + c\ket{k} $\end{minipage}}}%
+    \put(0.16675998,0.31579852){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.05240346\unitlength}\raggedright a\end{minipage}}}%
+    \put(0.332516,0.37818861){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.04192276\unitlength}\raggedright b\end{minipage}}}%
+    \put(0.28064418,0.45966316){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.03214079\unitlength}\raggedright c\end{minipage}}}%
+    \put(0.67891658,0.31579852){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.05240346\unitlength}\raggedright a\end{minipage}}}%
+    \put(0.84467261,0.37818861){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.04192276\unitlength}\raggedright b\end{minipage}}}%
+    \put(0.7928008,0.45966316){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.03214079\unitlength}\raggedright c\end{minipage}}}%
+    \put(0.01140597,0.63050377){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.25433153\unitlength}\raggedright \Large \textbf{(A)}\end{minipage}}}%
+    \put(0.51184547,0.63050377){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.2848401\unitlength}\raggedright \Large \textbf{(B)}\end{minipage}}}%
+    \put(-0.01917639,0.26782706){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.67984769\unitlength}\raggedright \end{minipage}}}%
+    \put(0.04578836,0.12157424){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.88239947\unitlength}\raggedright The vector spaces of (A) and (B) both behave identically. The projection of the vectors $\vec{r}$ and $\ket{\psi}$ along a component axis can taken by taking the inner product of the vector along with the desired component. The angles and length of vectors can also be taken as both posses inner product structure.\end{minipage}}}%
+    \put(0.09815919,0.22434832){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.6353672\unitlength}\raggedright $\hat{x} \cdot \vec{r} = b$\end{minipage}}}%
+    \put(0.62610985,0.22434832){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.6353672\unitlength}\raggedright $\braket{i|\psi} = b$\end{minipage}}}%
+    \put(0.09815919,0.18383502){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.46738519\unitlength}\raggedright $\vec{r} \cdot \vec{r} = a^2 + b^2 + c^2 = |r|^2$\end{minipage}}}%
+    \put(0.62610985,0.18383502){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.43477692\unitlength}\raggedright $\braket{\psi|\psi} = a^2 + b^2 + c^2 = 1$\end{minipage}}}%
+    \put(0.09815919,0.26486163){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.63339102\unitlength}\raggedright $\hat{x} \cdot \hat{y} = \delta_{xy}$\end{minipage}}}%
+    \put(0.62610985,0.26486163){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.6353672\unitlength}\raggedright $\braket{i|j} = \delta_{ij}$\end{minipage}}}%
+  \end{picture}%
+\endgroup%

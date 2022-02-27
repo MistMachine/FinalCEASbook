@@ -1,0 +1,72 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'cav-align-proper.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{612.1877255bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.33690363)%
+    \put(0.55294415,0.24903603){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Input Mirror}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{cav-align-proper.pdf}}%
+    \put(0.32741304,0.19708264){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.13907968\unitlength}\raggedright .\end{minipage}}}%
+    \put(0.12935727,0.8910268){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.05273826\unitlength}\raggedright \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{cav-align-proper.pdf}}%
+    \put(0.26092607,0.30544854){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.20790881\unitlength}\raggedright Cross Section\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{cav-align-proper.pdf}}%
+    \put(0.24395301,0.2646012){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14124598\unitlength}\raggedright Output Mirror\end{minipage}}}%
+    \put(0.1825704,0.15239643){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14884031\unitlength}\raggedright Transmitted Beam\end{minipage}}}%
+    \put(0.29207624,0.94197234){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.38677637\unitlength}\raggedright \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{cav-align-proper.pdf}}%
+    \put(-0.00091738,0.27270402){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.11748498\unitlength}\raggedright Printed Circles\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{cav-align-proper.pdf}}%
+    \put(0.37438015,0.34077537){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.51991526\unitlength}\raggedright Appropriate Alignment\end{minipage}}}%
+    \put(0.10835531,0.38744644){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.30336167\unitlength}\raggedright \end{minipage}}}%
+    \put(0.16436053,0.0215456){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.22775461\unitlength}\raggedright Cavity Output\end{minipage}}}%
+    \put(0.54986322,0.01967874){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.25762409\unitlength}\raggedright Cavity Input\end{minipage}}}%
+    \put(0.804918,0.19746078){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.20790885\unitlength}\raggedright \color{red} Input beam\end{minipage}}}%
+    \put(0.80293788,0.13937832){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.20394861\unitlength}\raggedright \color{blue} Cavity Axis\end{minipage}}}%
+  \end{picture}%
+\endgroup%

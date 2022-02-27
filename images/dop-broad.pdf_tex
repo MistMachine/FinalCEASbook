@@ -1,0 +1,72 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'dop-broad.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{463.86344745bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.87378573)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{dop-broad.pdf}}%
+    \put(0.86144412,0.6105308){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$v=+v_b$}}}%
+    \put(-0.00071732,0.87959277){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.47655816\unitlength}\raggedright a) All of the molecule rest frames, ie the frames where any of the molecules are at rest, including when the molecule is at rest. Refered to as Molecular rest frame\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{dop-broad.pdf}}%
+    \put(0.63970083,0.44515637){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29703739\unitlength}\raggedright Absorbed Photon\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{dop-broad.pdf}}%
+    \put(0.11321875,0.44442595){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29703739\unitlength}\raggedright Absorbed Photon\end{minipage}}}%
+    \put(0.53688987,0.79593029){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.33630592\unitlength}\raggedright \end{minipage}}}%
+    \put(0.50239694,0.87969877){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.49768328\unitlength}\raggedright b)Molecule moving in the same direction as laser beam. Here the frequency of the photon required for absorption has to be shifted higher since in its rest frame, shown in a), the frequency of the photon is higher\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{dop-broad.pdf}}%
+    \put(0.37271912,0.18183313){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$v=-v_b$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{dop-broad.pdf}}%
+    \put(0.47003524,0.02261822){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29703739\unitlength}\raggedright Absorbed Photon\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{dop-broad.pdf}}%
+    \put(0.37674419,0.38078347){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.43855269\unitlength}\raggedright c)Molecule moving in opposite direction of laser beam direction\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{dop-broad.pdf}}%
+    \put(0.26351366,0.6211052){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$v=0$}}}%
+    \put(-0.05231602,0.70735074){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.47822157\unitlength}\raggedright \end{minipage}}}%
+    \put(0.06014858,0.25389878){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.27471137\unitlength}\raggedright Here, the opposite case for the shift occurs. The absorbing photon must be of lower frequency since in the molecular rest frame, the frequency will appear higher\end{minipage}}}%
+  \end{picture}%
+\endgroup%
