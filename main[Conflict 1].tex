@@ -1,0 +1,1130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% document class
+\documentclass[11pt,a4paper]{book}
+%% packages
+\input{settings/packages}
+
+%% page settings
+\input{settings/page}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\imginput}[1]{\input{#1}} %this command is to prevent pdf_latex imgs from showing up in structure
+\pdfsuppresswarningpagegroup 1
+\begin{document}
+
+\frontmatter
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%
+\input{title_page}	
+\chapter{Preface}
+	\label{chp:preface}
+	Just to \footnote{clarify} for the keyboard warriors. I AM AIMING FOR CONTENT, NOT PUBLICATION RIGHT NOW. Get off my nuts. I also do not want your opinion on how I should explain thing as all of you would just degrade the quality. I just care about you grammar nazi's fixing the engrish into english. O and the police department of england, can you all just deport my shitty family member who are still trafficking over there. They don't plan on stopping. I also do not give a flying horse manure about any of them as I do not consider any of them my family.
+	
+	Currently, much of the material being taught today in university and college class are extremely out of touch with what is relevant with today's current research, in physics especially. This has made it difficult for students nearing the end of their studies to jump into todays research projects without getting completely lost. In the physical science field, research projects have become increasingly more complex, technologically and theoretically wise. Long gone are the days of throwing in raw material and hoping for the best, boring titrations, or smoothening metal surfaces by hand, etc etc. This book is aimed at helping young university students jump into laser spectroscopy to aid in acquisition of the necessary theoretical and technical skills. This is just a band-aid solution however, but will provide as a base for my long-term future goal of updating the material being taught in elementary school all the way to the university/college level. 
+	
+	Another result of todays outdated teaching material is the large gap in experience and knowledge between todays professors and todays students, particularly again in physics. To much pretentious language and jargon. This large gap has made it difficult for professors to effectively communicate complicated concepts and techniques to students as they have long forgotten what it is like to be young and naive. Much of today's papers are also targeted at todays professors completely allienate todays young and inexperienced students. This is not helping at all.
+	
+	An examples of very complicated AND critical technique for many laser cavity setups is the infamous Pound Drever Hall locking technique. Many physics students(pretty much all but me) get completely lost with this technique because of absent knowledge of material this technique is based off of. Feedback control theory, modulation and heterodyning is absolutely essential for PDH locking, but is not being taught to many students at any point during their studies. It should be at the very least, be given as pre-reading. I plan to remedy this problem by personally over hauling university/college optics class to include locking of a cavity in general. Professors have essentially progressed many fields, not just laser spectroscopy or cold molecules, significantly and thus actually do not know how to effectively help and guide students in learning complex experiments. This book should explain concepts not currently explained to students from their studies so that they may understand this complex field. This is by no means easy and there is a reason why the content taught today is outdated.
+	
+	Formerly being one of those poor lost students and now one of the leaders of the field, I have gone on to solve the first solution to the cavity problem, create a new cavity aligning technique(used all over the world), and created a systematic method of aligning a laser cavity in the infrared red region resulting in the alignment of the world's first 0.98cm (~1m) mid-infrared cavity. I did all this while still in my early 20s during my undergrade mind you. This book currently serves somewhat as a personal journal of everthing I have learned so as to provide a source at picking at my brain to help communicate everything I needed to learn in order to understand this complex interdisciplinary field. I have decided to make this book free for life on my github(or something else) repository so that anyone can freely view this book. I also will make multiple jupyter notebook page to accompany this book for interactivity with this book as some concepts are just better explained with interactive plots etc etc and images. The jupyter notebook will also serve to help young chemists and physicists learn python as I will comment the crap out of everything.
+	
+	At some point, I also would like python (more broadly, programming) to be taught teenagers as programming has proven to be a valuable tool in ALL FIELDS. Due to Python's easy to use and learn syntax, vast open source resource library of packages,  generous funding of various groups and societies, it has proven to become a high class, flexible, powerful and universal tool in many fields. Personally, being a chemist, physicist and soon engineer, I will just show be showcasing its uses in these fields, but of course, it has applications in statistic, finance, mathematics, and data science in general etc etc. I am aware of Julia, but I am accustomed to python and am not planning to switch languages again.
+	
+	I still have much to learn, so this book(formerly a thesis) will continue to grow as I work on my PhD. A lot of this content will also end up in my more professional PhD thesis that I will hand in for my graduate studies. This final thesis will be a professional document(for the snobs). I admit, I have torrented and never financialy contributed anything during my studies, so this will serve as my way of giving back to the academic community. I hope you old farts are ready. I also will not be posting experimental results like you would see in a typical thesis (hence why I call this a book and a separate entity). I will however include experimental data to show the tricks that I use to automate mundane and painfully long data processing. I also will showcase my programs that I created. I am not officially a software engineer yet and have very little knowledge of optimization so be gentle. Programming wise, I am just concerned with them working, being completely automated, and producing reliable results.
+	
+	Before I start the first chapter, I am going to state various questions to keep in mind when reading so that the most important objectives are clear. Why am I studying chemistry, physics and engineering? Why so many different topics? How did I learn all these things? Why should you read this book? What if you are not interested in lasers, spectroscopy or engineering? The answer to all these questions is because you want to better yourself, you want to love and improve your work, you want to push things as far as {\bfseries YOU} can, or get the job done(at the very least). This book is going to be about laser spectroscopy, particularly employed with NICE-OHMS and Freq combs, but I will break every topic down into their core components. If you are in chemistry, physics, engineering or even math, you {\underline{will}} find many of these core topics and concepts reoccurring in your own field.
+	
+	I will clean up the language when things are finalized, I still got 6 more years. Made on Sunday, December 4, 2016 on Ubuntu 16.10 from my parents house (I'm a currently a bum)
+	
+\mainmatter
+%------------------------------------------------------------------%		
+%------------------------------------------------------------------%		
+%------------------------------------------------------------------%		
+\chapter{Introduction to Spectroscopy, Optics, and Programming}
+	\label{chp:Introduction to Spectroscopy, Optics, and Programming}
+	Read the preface first please. It is important. I understand it sounds like a journal article or a long rant, but it contains useful knowledge and motivation for this book.
+	
+	The focus of the very first chapter is to provide a quick and basic run down what to expect from this book. In other words, what I have learned from my studies and how I entwine all these various topics together. There will be no discussion of math or programming in this current chapter. Math will be encountered later on when we dive into the various topics as well as within the Jupyter notebooks. How to completely utilize python will not be covered in this book as the tutorials are complete and simple enough to understand (seriously though, if you can't go through the tutorial you are whiny)\todo{edit later}. There are no shortcut in learning how to program as learning to code takes time, patience and practice. If programming and math are not a major concern in your field, just skip the equations and coding to shift your focus on to the images and plots. As a chemist, I know many of my peers are mathematically challenge and that is perfectly acceptable. For my fellow physicists, stop judging them because all you are spatially handicapped. Grow up engineers.
+	
+	The focus of my studies so far is centralized about molecular {\bfseries spectroscopy}, linear and nonlinear {\bfseries optics}, electrical and software {\bfseries engineering}. To tie in the connection between spectroscopy and optics, expect to see an enormous amount of {\bfseries quantum mechanics} from both the physics and chemistry interpretations. In addition, expect to see lots of data manipulation with python3.5 (maybe some Igor), instrumental control with Labview, data manipulation and plot interaction an creation within various jupyter notebooks. I will notify which figures contain objects produced within a jupyter notebook. The jupyter notebooks used to create figure images can be located in the images directory within their respective chapters that the images are found in. The Jupyter notebook are heavily commented and contain all the code for making the plots should you want to learn from them or use them yourself. By simulations, I just mean mathematical calculations with adjustable parameters. Just a clarification, simulation are not necessarily just videos of objects moving; this actually took me a while to comprehend.
+	
+	include a screenshot of jupyter notebook simulation at various states
+	\section{Spectroscopy Intro}
+		\label{sec:Spectroscopy Intro}
+		\begin{figure} [!ht]
+			\centering
+			\def\svgwidth{\columnwidth}
+			\huge
+			\resizebox{8cm}{!}{\imginput{images/molecule.pdf_tex}}
+			\caption{This is a molecule consisting of two atoms for those who are, for some reason, not acquainted with what molecules. If you do not know what a molecule is, you should not be reading this book.}
+			\label{fig:molecule-alpha}
+		\end{figure}
+		
+		{\bfseries Spectroscopy} is the study of matter where techniques are employed to collect their spectral information. Such techniques include the observation of derived ions via the use of a generated and well defined electric field (REMPI) or just interaction of matter with electromagnetic radiation(is mass s). Spectroscopy is important as it has allowed us to verify and interpret many of the different phenomenons predicted by quantum mechanics. More practically in chemistry, spectroscopy allows us to determine the structure and properties of molecular species as these interaction are dependent on the various levels of structure within atoms and molecules. Remember that molecules consists of elements and it is actually impossible to "photograph" them. These interaction typically include emission and absorption (and maybe dispersion??) of electromagnetic radiation of matter and only strongly occur when the frequency of the laser beam is resonant with a transition of the atom or molecule. Transitions cause atoms and molecules to undergo a changes in their initial state[structure] of the wavefunctions[molecule] to another state[structure]. The method for determine which transition are allowed and disallowed will be discussed later on. When determining the frequency range of interest, the atom or molecule and the type of transition must be considered so that the appropriate type of laser and detector is used in the experiment. This is important as different types of transitions have different degrees of coupling as well just difference in their nature. For example, electronic transitions involve changes in electronic energy of the electrons with frequency ranging from visible light to ultraviolet. Rovibrational and rotational transitions requires electromagnetic frequencies from the infrared and microwave region respectively. However, rovibrational spectroscopy of molecules is the big focus though. 
+	
+		\begin{figure} [!ht]
+			\centering
+			\def\svgwidth{\columnwidth}
+			\resizebox{15cm}{!}{\imginput{images/abs-rovib-trans.pdf_tex}}
+			\caption{Many of the molecules from the  diatomic species above have their vibrational mode  excited into its first vibrational excited state. This is caused by the absorption of the photon forming the laser beams. The effects is the energy from the photons, $qh\nu$, are transfered to the molecules resulting in stronger vibrations of the molecules.}
+			\label{fig:abs-rovib-trans}
+		\end{figure}	
+		
+		With molecules, we cannot make the assumption that the nucleus and/or electron within a molecule are non interacting like is done for a large part atomic spectroscopy. This is because the various atom are in such close proximity of each other when bonding such that these interaction must be taken into consideration in order to obtain reliable results. Some of the results of these interactions are shifts in energy level of states due to mixing, shifts in energy because of various molecular conformations and their associated microenvironments, coupling of modes of something something something (forgot the jargon) addition of rovibrational structure, and (talk about symmetry, man i really gotta brush up on this, super disgraceful). I am particularly focused on rovibrational transitions of molecules meaning I will specialize in the use of infrared lasers. Rovibrational spectroscopy strengths lie on its ability to gives structural, isotopic, and conformational information of the molecule but it comes at the cost of having to use infrared. Infrared is particularly difficult to work with as it is invisible to the naked eye thus making it very dangerous to work with. You might blind yourself or others when working with infrared so it is VITAL TO TAKE extreme precaution when aligning with infrared. It is better to be safe then sorry. One particular advantage that I am focused on is its potential for high resolution spectroscopy because of the naturally low energy nature. There is very little development in this field as of this moment meaning there is a lack of good sources of radiation and detection. This is something I wish to change throughout my career. The next target is rotational spectroscopy which should be many times more impossible than rovibrational spectroscopy.
+		
+		\begin{figure} [!ht]
+			\centering
+			\def\svgwidth{\columnwidth}
+			\Huge
+			\resizebox{10cm}{!}{\imginput{images/laser-gaussian-beam.pdf_tex}}
+			\caption{Notice how the beam begins to diverge the further it travels away from the laser source. Lasers do not travel in straight lines because of an uncertainty principle.}
+			\label{fig:laser-gaussian-beam}
+		\end{figure}
+		
+	\section{Introduction to Lasers and Optics}	
+		\label{sec:Introduction to Lasers and Optics}
+		So why am I so focused on lasers? Why not broadband/divergent sources such as lamps? Aside from the fact that I plan to specialize in laser spectroscopy, my big reason for choosing to work with lasers is because the potentials lasers have for ultrahigh resolution spectroscopy. I won't lose. Hyperfine structure is a result of interaction of nuclei and electrons within atoms and molecules, but is minuscule in comparison to rovibrational structure . Observation of hyperfine structure is not achievable with broadband sources of radiation because of the differences in the size of their frequency linewidths; more on this later. Lasers have naturally lower linewidths allowing for production of higher resolution spectrums as fine structures may be resolvable. Notice how I say can and maybe. Divergent radiation sources have much larger linewidths making them near impossible to observe hyperfine structure (watch someone prove me wrong). 
+		
+		\begin{figure} [!ht]
+			\centering
+			\def\svgwidth{\columnwidth}
+			\resizebox{12cm}{!}{\imginput{images/linewidths-gaus-blackbody.pdf_tex}}
+			\caption{The red line is a gaussian beam with a frequency centered at about $5.0 \times 10 ^ {14}$ Hz  (600nm) while the blackbody radiation broadened over a large spectrum. The blackbody radiation source can be thought of as tungsten lamp, a broadband source. The frequency of the laser is very well defined in comparions to the black body radiation source. This well defined frequency nature is what enables high resolution spectroscopic details to be extracted from a sample.}
+			\label{fig:linewidths-gaus-blackbody}
+		\end{figure}
+				
+		Despite this drawback, divergent radiation sources still have important applications where speed is essential, after all FTIR is still dope. Depending on which is more important, speed or resolution, the appropriate radiation source must be chosen. Lasers nowadays are much more affordable and reliable now a days because of the advances in their technology (need to read up on lasers). Now is a good time to introduce the essential topics of lasers to classroom fields of study, not just in physics and chemistry. It is not necessary to go into full details about their derivation of course as many mathematical tools are essential in the derivation such as vector calculus.
+		
+		For the topics in optics(thanks Emily), 
+		I will mostly cover linear optics in this book and the results an effects of non-linear optics from special crystals. More specifically, I will mostly focus on the effects of using the crystals, as the actual interaction between the crystal and laser beam is quite mathematically challenging (even for most physicists). Nonlinear optics is an important topic however as non-linear crystals have allowed the implementation of many more advance techniques such as modulation, heterodyning and tuning of lasers. You do not need to understand what I just said about non-linear crystals as I am just introducing them. Non-linear effects will largely be overlooked and taken for granted in this book. 
+		
+		\begin{figure} [!ht]
+			\centering
+			\def\svgwidth{\columnwidth}
+			\resizebox{16cm}{!}{\imginput{images/non-linear-crystals.pdf_tex}}
+			\caption{Examples of the modifications that can be performed on an input laser beams. These processes tend to be very inefficient in their conversions as the resulting output laser beams tend to be much lower in intensity than the input laser beams}
+			\label{fig:non-linear-crystals}
+		\end{figure}
+		
+	\section{Programming}
+		\label{sec:Programming}
+		probably\todo{BAH!}\ consist of two parts.
+		
+		one to talk about initializing instruments and using basic labview techniques to simply control instrument 
+		
+		another using python3.5 to for data processing
+		most likely refer to a jupyter notebook for this
+		
+		Ignore this section for now, this is just a placeholder for my thoughts. I need to actually experiment more and do some mroe reading on instrumentation and Labview. Computers and associated software have also seen large advances making controlling lasers and other instrumental devices vastly simplified as new devices can simply be controlled by USB where the signal transfer is parallel. It also helps when all the makers of instruments follows the same up to date standards. (I had to use serial communication with instrument older than myself for most of my instruments in my first laser cavity project. It was painfully buggy and made synchronization nearly impossible since with serial, you can only send information one bit at a time. Probably buggy because of the older computers inside the instruments.
+
+	\section{Basic Direct Absorption Spectrosopy Setup}
+		\label{sec:Basic Direct Absorption Spectrosopy Setup}
+		With all these topics of spectroscopy, optics and engineering in mind, we want to build a simple spectroscopy experiment to collect an absorbance signal from the sample where everything is automated. By automating as much of a experiment as possible, we are reducing human error while freeing up as much time as possible for the experimentalists so that they  can focus on performing more complex tasks that require flexibility and creativity. The setup must be built so that anyone can put in the analyte, turn on your laser and automatically begin data collection followed by data analysis to produce your lovely spectrum(or signal) and extraction vital information.
+		
+		To illustrate this, direct absorption spectroscopy (useful only in a learning environment) figure will be used as the model in this chapter. To follow \autoref{fig:dir-abs-spec-setup}, start at the laser source and follow the laser and signal all the way to the computer with the spectrum while reading the annotations in order. I will not be going to in dept as the later chapters will bind everything together.	
+		
+		\begin{figure} [!ht]
+			\centering
+			\def\svgwidth{\columnwidth}
+			\resizebox{16cm}{!}{\imginput{images/dir-abs-spec-setup.pdf_tex}}
+			\caption{This image illustrates a basic direct absorption spectroscopy setup with all the essential components.}
+			\label{fig:dir-abs-spec-setup}
+		\end{figure}	
+		
+		\noindent
+		{\bfseries (A)} The optical system is used to adjust the beams various parameter such as intensity, phase and frequency.\\
+		{\bfseries (B)} At least two mirrors must be used to perform fine tuning of the laser in 3 dimensions. This is necessary in order to propagate the beam through the sample and detector crystal. \\
+		{\bfseries (C)} As the beam travels through the optical system, there is power loss at various point of the laser beam. Substantial loses occur at the optical system. At\\ {\bfseries ***}, the is beam split so that the a laser intensity can be approximated. The most important location of power loss is at our sample as that is where our signal lives.\\
+		{\bfseries(D)} The detector analog signals travels to the USB-DAQ with some modification to the signal if necessary. The USB-Daq then converts the analog signals into digital so that can be transferred to a computer to be stored and processed. \\
+		{\bfseries(E)} More than one program can be used in the data collection and processing. For example, Labview can be used to initiate communication with the instruments, such as the laser, and initiate the USB-Daq for data acquisition. The generated data file can be loaded on to IPython console, Jupyter notebook, or Igor for automated data manipulation and plot creation.		
+	
+	\section{Advance Techniques}
+		\label{sec:Advance Techniques}
+		The rest of the content will begin to increase in complexity as we focus on more relevant spectroscopy techniques such as frequency modulation spectroscopy, Pound-Drever-Hall locking technique, cavity enhanced absorption spectroscopy, frequency combs, noise immune cavity enhanced optical heterodyne molecular spectroscopy (why Dr. Ye....), and something something.
+
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%
+\chapter{Spectroscopy and Quantum Mechanics}
+	\label{chp:Spectroscopy}
+	
+	\begin{figure} [!ht]
+		\centering
+		\Large
+		\def\svgwidth{\columnwidth}
+		\resizebox{13.5cm}{!}{\imginput{images/particle-wave-duality.pdf_tex}}
+		\caption{{\bfseries Particles} behave just like any old soccer ball. They collide and reflect off surfaces \newline
+			{\bfseries Waves} can diffract, become attenuated in intensity, and interfere with each. \newline
+			{\bfseries Microscopic particles} such as electrons and photons show both characteristics \newline
+			Also, all electrons are blue because Budha made them that way.}
+		\label{fig:particle-wave-duality}
+	\end{figure}
+	
+	Spectroscopy is the field where atoms and molecules are experimentally probed to obtain spectral information to aid in characterization. There are actually a number of creative methods and techniques currently employed to obtain spectroscopic detail of the target species such as Resonance-Enhanced MultiPhoton Ionization, but this book will focus on the class of Laser Absorption Spectroscopy (\autoref{sub:Laser Absorption Spectroscopy}) techniques to observe possible transitions of quantum mechanically governed ??\todo{hello}\ particles. With frequency ranges in the infrared to microwave, rovibrational and rotational transition of targeted molecules or radicals are observed. Rovibrational spectrums collected from these target species will in turn give details such as the bonding order between the elements, conformational structure of the molecules and isotopic information of the elements. 
+	
+	\begin{figure} [!ht]
+		\centering
+		\Large
+		\def\svgwidth{\columnwidth}
+		\resizebox{12cm}{!}{\imginput{images/photon-electron-transition.pdf_tex}}
+		\caption{{\bfseries (A)} The electron in the 1s state is absorbing an electron and transitioning into the 2p state which is higher in energy. 
+		\newline
+		{\bfseries (B)} The 2p electron lowers to the ground state 1s electron while also emitting a photon. \newline
+		{\bfseries ***} If we assume the electrons are the same and the emission event occured right after the absorption event,  the emitted photon is randomly scattered in any direction}
+		\label{fig:photon-electron-transition}
+	\end{figure}		
+	
+	Before jumping into infrared spectroscopy, it is necessary to discuss a bit about quantum mechanics and how molecules interact with electromagnetic radiation \autoref{fig:photon-electron-transition} in order to lay out the foundation for understanding spectroscopy. The proofs and derivation will largely be simplified since this is not a quantum mechanics textbook. The classical electromagnetic radiation will also now be treated as the quantum mechanical photon in this chapter out of convenience. 
+	
+	\begin{figure} [!ht]
+		\centering
+		\huge
+		\def\svgwidth{\columnwidth}
+		\resizebox{10cm}{!}{\imginput{images/methyl-radical.pdf_tex}}
+		\caption{{Methyl Radical (CH3) radical. It is essentially methane (CH4), a tetrahedral molecule, but is missing a hydrogen bond. It is radical since it has a lone electron. It is also neutral in charge. I probably need to learn how to use molecular structure program. Or just get someone else to remake this and create all future molecules for me.}}
+		\label{fig:methyl-radical}
+	\end{figure}
+		
+	At the microscopic level, matter exhibits both particle and wave like properties \autoref{fig:particle-wave-duality}. This is known as the particle-wave duality and is dominant when describing slow and microscopic particles. This wave nature allows for the treatment of the particle as a wavefunction. Some of the result for having wavelike nature are the discreteness of the wavefunctions, the probabilistic behaviour of the particle, and the uncertainty of various measurable quantities of the particles. There is also tunnelling nature of particles, but this property will be overlooked in this book. 
+	
+	A wavefunction a mathematical construct describing its state and the properties of the system in a wavelike fashion. From the wavefunction, by the use of mathematical operators, abstract spaces/groups with non visualizable dimensions, statistic, probability, complex planes and other math techniques, we can create, interpret and derive meaningful results. This is essentially what quantum mechanics is in simple and practical terms. Quantum mechanics is actually much deeper, but the math derivation are quite rigorous so we focus on the concepts that are deemed necessary to interpret spectroscopy. It is important to note that wavefunctions are not actually physical and are just mathematical constructs that exist in the complex plane. If all of this is confusing, do not worry as this information is just to provide directions for those who are particularly interested in the actual complexity of quantum mechanics.
+	
+	From the wavefunction, we can obtain various information describing the behaviour of the particle, such as its energy, location, momentum, angular momentum, and so forth. In fact, the exact form of the wavefunctions must satisfy the Hamiltonian with the associated boundary conditions of the problem.
+	
+	\begin{eqnarray}
+		\label{eq:hamiltonian of wavefunction in cartesian}
+		\hat{H} (x, y, z) \psi(x, y, z)
+			&=&\left( \hat{T}(x, y, z) + \hat{V}(x, y, z) \right) \psi(x, y, z)\\
+			&=&E\psi(x, y, z)
+	\end{eqnarray}
+	
+	\noindent
+	The Hamiltonian operator $\hat{H}(x,y,z)$ is the energy operator and can be thought of acting on a wavefunction, $\psi(x, y , z)$ to obtain the energy of the wavefunction/particle as an eigenvalue. The eigenvalue is the constant pulled out in front of the wavefunction after the operator has operated on the wavefunction. From classical mechanics, we know that there are two types of energy, kinetic and potential energy. The Hamiltonian operator, analogous to the classical interpretation, also consist of two operators itself; the kinetic energy operator ($\hat{T}$) and potential energy operator ($\hat{V}$). 
+	
+	Before going any further, no wavefunctions equation will actually be shown, but instead will be represented in their bra and ket form for simplicity. $\ket{\psi_k}$, $\bra{\psi_i}$ and $\braket{\psi_i|\psi_k}$ or $\ket{k}$, $\bra{i}$ and $\braket{i|k}$. I will also be dropping the coordinates as the coordinate system used to solve the problem will depend on the symmetry of the Hamiltonian (more specifically, the symmetry of the potential energy operator $\hat{V}$). More importance will be shifted on to the operators, the wavefunction and their eigenvalues.
+	
+	\begin{eqnarray}
+		\label{eq:hamiltonian of wavefunction in braket notation}
+		\hat{H}(x, y, z)\ket{\psi(x, y, z)}
+		&=&\left( \hat{T} + \hat{V}\right) \ket{\psi_i}\\
+		&=&E_i\ket{\psi_i}
+	\end{eqnarray}
+	
+	When a particle is confined whether by bonding, high energy barriers, or any other physical constraints, the wavefunction of the particles take on discrete forms. This confinement on the particle/wavefunction is represented by the potential operator. This discreteness is originates from the applied boundary conditions on the Hamiltonian function. These discrete forms are better known as {\bfseries states} of the wavefunction and are more generally refered to as quantum numbers. Examples of systems with discrete states are the electrons bonded to a positive nucleus resulting in the n=1,2,3,4 ... $\infty$ electronic energy levels of the electrons, discrete vibrational and rotational states of molecules, and allowed resonating frequencies of photons of an optical cavity \autoref{sec:Optical Cavity and Resonance Properties}.
+	\todo{make diagram of rovibrational energy levels}\
+	
+	Transitions from one state to \textit{can} be caused from absorption or emission of radiation. With absorption of a photon, the particles increases in energy because of the transition from a lower energy state into a high energy state. For emission processes, the molecule lowers in energy from transition to a lower energy state while emitting a photon. These transitions between the wavefunctions are also discrete, meaning only photons of specific energy may be absorbed. The energy difference for the transition is equal to the energy of the photon that is absorbed or emitted. The energy of a photon is determined by its frequency or wavelength where higher frequencies and lower wavelengths correspond to photons with higher energy. This energy relation is given by \autoref{eq:photon energy forms}.
+	
+	\begin{equation}
+		\label{eq:photon energy forms}
+		\begin{array}{cccccccc}
+		E_{photon}=h\nu=\hbar \omega &\qquad &E_{ik}=E_{k}-E_{i}  & \qquad & E_{ik} = E_{photon}& ||| &\tilde{E}=h\tilde{\nu}
+		\end{array}
+	\end{equation} 
+	
+	Some quantum numbers have a finite number of states while others are infinite in numbers of states. Some finite number quantum numbers are the electron or nuclear spin states. Some infinitely numbered quantum numbers are the vibrational, rotational and electron electronic states of the matter are infinite in number. Mathematically, this means that these wavefunctions(solution), for a given Hamiltonian(partial differential equation), form an infinite dimensional orthogonal basis set in Hilbert space. Do not fret as it is normal to have an infinite number of states as long as the occupation probability of the higher level states drops to zero as the energy of the states increase. 
+	
+	If there are an infinite number of states, then there should be an infinite number of transitions. Thankfully, there are actually a finite number of \textbf{observable} transitions because of nature of how we are detecting these transitions. Mathematically, this finiteness is because of the symmetry of the wavefunctions, electromagnetic radiation (perturbation), statistical distribution of the states, and selection rules. 
+	
+	An example of a \textbf{simulated} statistical distribution of states is shown in \autoref{fig:Methyl-Radical-Angular-Momentum-Distribution} describing the thermal equilibrium population of rotational states for methyl radical. As the total and component angular momentum of the states increases, the population of these states decrease. The transitions involving these high angular momentum states are less observable since there are few radicals populating these states to begin with. And there is also the consideration of states that are degenerate. The relation between energy, probability and statistical distribution of states will be explained in \autoref{subsec:Statistical Distribution}. 
+	
+	\begin{figure} [!ht]
+		\centering
+		\Large
+		\def\svgwidth{\columnwidth}
+		\resizebox{14cm}{!}{\imginput{images/Methyl-Radical-Angular-Momentum-Distribution.pdf_tex}}
+		\caption{its not normalize, I know. I'll factor in the partition function later. The bond angles and bond lengths of methane were used as an estimation.}
+		\label{fig:Methyl-Radical-Angular-Momentum-Distribution}
+	\end{figure}
+	
+	\noindent
+	I will also delve into rovibrational and rotation calculations of methyl radical at the end of this chapter in \autoref{sec:Theoretical Calculation of Methyl Radical}. Now, with all the foundation for spectroscopy laid out, lets dive into principles for rovibrational spectroscopy. 
+	
+	make energy diagram showing the rotational, vibrational and maybe electronic energy levels
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%
+	\section{Infrared and Microwave Spectroscopy}
+		\label{sec:Infrared and Microwave Spectroscopy}
+		Till this point, the distinction between \textbf{rovibrational} and \textbf{rotational} spectroscopy has been made, but not explained. The two are definitely different types of spectroscopy, but they are also connected. This is because rovibrational is actually spectroscopy of \textbf{vibrational} states coupled with \textbf{rotational} states. This coupling is due to the two different quantum number of the molecules both existing simultaneously. For example, for a given vibrational state, there exist another number of other possible rotational state. A simple analogy, is to consider a 6 sided dice and a deck of cards. The dice has 6 possible outcomes/elements while the deck of card has consists of 52 (excluding the joker) unique cards/elements. If you roll a 1 with the dice, you have 52 different cards to choose from. You can roll a 1 with a Ace of Spades, a 1 with a 5 of Hearts or a 1 with the Queen of Clubs. Of course you can also roll a 2, 3, 4, 5, or 6 while drawing any of the 52 cards. This concept can be expanded on to vibrational states being represented by the dice and rotational states being represented by the deck of cards. Hopefully you can see that there exist an infinite combinations of states for the vibrational and rotational quantum numbers. This natural spread out distribution of states between vibrational and rotation states causes rovibrational spectroscopy to be exponentially more complex than rotational spectroscopy. This also plays in an important factor in resolution and its consequences on resolution will be explained in \autoref{sec:Distribution and Spread of Transitions}. Just for knowledge purposes, electronic spectroscopy include coupling of \textbf{electronic} states with vibrational and rotational states making electronic spectroscopy to be exponentially more complicated than \textbf{rovibrational} spectroscopy.
+		
+		\subsection{Rotational Quantum Number}
+			\label{subsec:Rotational Quantum Number}
+			Before diving into rovibrational spectroscopy, rotational spectrscopy must first be developed. subsection will mostly discuss a bit of the rigid rotor problem in classical mechanics and its consequences in quantum mechanical particles. 
+			
+			The physical and mathematical result for rotational states stems from considering the energy due to the angular momentum of a molecule.
+		
+			\begin{eqnarray}
+				\label{eq:hamiltonian of wavefunction in spherical}
+				\hat{H} (r, \theta , \phi) \psi(r, \theta, \phi)
+				&=&\left( \hat{T} + \hat{V}\right) \psi(r, \theta, \phi)\\
+				&=&E\psi(r, \theta, \phi)
+			\end{eqnarray}
+			
+		\subsection{Vibrational Quantum Number}
+			\label{subsec:Vibrational Quantum Number}
+		\subsection{Rovibrational Spectroscopy}
+			\label{subsec:Rovibrational Spectroscopy}
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------
+	\section{Rules for Allowed Transitions for Dipoles Transition}
+		\label{sec:Rules for Allowed and Disallowed Transitions}
+		quick intro on symmetry
+		\subsection{Peterbation Theory}
+			\label{subsec:Peterbation Theory}
+		\subsection{Selection Rule}
+			\label{subsec:Selection Rule}
+		\subsection{Group Theory}
+			\label{subsec:Group Theory}
+		
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%
+	\section{Factors in Resolution}
+		\label{sec:Factors in Resolution}
+		In this section, the major sources of peak broadening and their characteristic types of distributions will be discussed. The important distributions that are considered are Gaussian, Lorentzian and Voight distributions. An important concept to also keep in mind about the distributions is their spread, where high spreads correspond to high uncertainty in the measurement of frequency of the transition. These high uncertainties in the frequency measurement are a result of their relatively short lifetimes of the excited states. More on the connection between spread,uncertainty and life time is discussed in the \autoref{subsec:Natural Linewidth}.
+%-------------------------------------------------------------------------------%
+		\subsection{Statistical Distribution}
+			\label{subsec:Statistical Distribution}
+			As the total and component angular momentum increases, so does the energy of the methyl radical. These higher energy states, relative to ground, result in instability of the radical meaning these states are less populated. There is also degeneracy?? multplicity?? to take into account, but this will be further developed in soso subsusection \todo{}\
+%-------------------------------------------------------------------------------%
+		\subsection{Natural Linewidth}
+			\label{subsec:Natural Linewidth}
+			The natural linewidth of a spectral transition is the minimum uncertainty in the transition that can be obtained. This uncertainty, or noise, is inherent for any type of measurement as can be observed in white noise. Quantum mechanically though, this natural spread is due to energy(frequency) and time uncertainty principle
+			
+			\begin{equation}
+				\label{eq:energy(frequency)timeuncertainty}
+				\begin{split}
+				&\Delta E \Delta t \geq \dfrac{\hbar}{2} \\
+				&\Delta \omega \Delta t \geq \dfrac{1}{2} \\
+				&\Delta \nu \Delta t \geq \dfrac{1}{4 \pi}
+				\end{split}
+			\end{equation}
+			
+			\noindent
+			for which the lifetime of the excitation or lowering from one state to another affects the broadening of the spectral transition. From \autoref{eq:energy(frequency)timeuncertainty}, we can see that shorter lifetimes will result in larger uncertainty(spread) in the energy or freqeuncy of the transition since the uncertainty of both the energy(frequency) and time must be at least the respective quantity on the right. Interestingly, \autoref{eq:energy(frequency)timeuncertainty} also shows the relationship between the energy time uncertainty of quantum mechanics and the frequency time uncertainty from fourier transformations where $E=\hbar \omega =h \nu$. 
+			
+			To expand on the concept of time and frequency uncertainty, continuous wave laser beams have very narrow frequency line widths since the beam exist for an "infinite" amount of time while pulse lasers have large frequency line widths since their duration are short and finite. A more classical and mathematically rigorous explanation can be found in chapter 3 of \cite{LaserSpec1}
+			
+%-------------------------------------------------------------------------------%
+		\subsection{Doppler Broadening}
+			\label{subsec:Doppler Broadening}
+			For a gaseous molecule at rest and only doppler broadened, the frequency of the photon for the absorbing transition is simply equal to the energy difference of the states. 
+			This is NOT TAKING into account the uncertainty in the energy of the states for simplicity.
+			Gaseous molecules are typically traveling very fast thus shifting the wavelength or frequency of the photon required for absorption for the transition
+			This can be explained by considering the frame of the molecule where it is at rest and by looking at the wavelength/frequency of the photon in that frame. 
+			This consideration of looking at the rest frame of the molecule leads to the relation.
+			
+			\begin{equation}
+				\label{eq:frequencyInNewRestFrame}
+				\omega_a =\omega_{ik} \left(1+\dfrac{v_z}{c} \right)
+			\end{equation}
+			
+			\begin{figure} [!ht]
+				\centering
+				\def\svgwidth{\columnwidth}
+				\resizebox{150mm}{!}{\imginput{images/dop-broad.pdf_tex}}
+				\label{fig:dop-broad}
+				\caption{An input beam that is attenuated by a sample about a resonant transition}
+			\end{figure}	
+			
+			Due to the velocity of the molecules in the same direction as the beam propagation axis following a Gaussian distribution and linearity in transformation between frames, the required resonant eigenfrequency of the photon absorption also follow the same Gaussian distribution. 
+			At thermal equilibrium, the velocity distribution of the absorbing molecules along the z (any actually) component follows the Gaussian distribution
+			leading to the Gaussian distribution of absorbed eigenfrequency about $\omega_{ik}$ of the transition.
+			
+			\begin{equation}
+				\label{eq:EigenFrequencyGaussianDistribution}
+				n_i(\omega)d\omega = \dfrac{N_i c}{\omega_{ik}} \sqrt{\dfrac{m}{2 \pi k T }} \exp{\left[\frac{m c (\omega-\omega_{ik})^2}{\omega_{ik} 2kT}\right]} d\omega
+			\end{equation}
+			
+			The final assumption is to then assume that the distribution of the intensity profile for Dopplerbroadening follows the same Gaussian Distribution followed by some simplification with the definition of its full width half max.
+			
+			\begin{equation}
+			\label{eq:dopplerintensityGaussianDistribution}
+			I(\omega)=I_0 \exp{\left(-\dfrac{(\omega-\omega)^2}{0.36 \delta \omega_{D}^2}\right)}
+			\end{equation}
+			
+			\begin{equation}
+			\label{eq:DopplerBroadeningFWHM}
+			FWHM=\delta \omega_D =\dfrac{\omega_0}{c} \sqrt{\dfrac{8kT\ln{2}}{m}}
+			\end{equation}
+			
+			From \autoref{eq:dopplerintensityGaussianDistribution} and \autoref{eq:DopplerBroadeningFWHM}, Doppler broadening is minimized by thermally cooling the distribution of the molecules about the beam axis. This can be achieved most simply by cooling the same or more extremely by supersonic molecular expansion or deceleration techniques such as Zeeman and Stark. Deceleration techniques and super sonic expansion fall under the field cold molecules which is the purpose for the existence of this project.
+%-------------------------------------------------------------------------------%			
+		\subsection{Pressure Broadening}
+%-------------------------------------------------------------------------------%		
+		\subsection{Transit-Team Broadening}
+			broadening due to shape and phase of the beam when interacting with atoms/molecules
+
+		\subsection{Saturation and Power Broadening}
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%	
+	\section{Laser Absorption Spectroscopy}
+		\label{sec:Laser Absorption Spectroscopy}
+		This chapter discusses the class of spectroscopic techniques that fall under Laser Absorption Spectroscopy (LAS). The ultimate goal of this project is to acheive NICE-OHMS technique and this chapter will develop an understanding of why this technique is chosen and how it functions. In order to utilize and understand this technique though, it is recommended that a feel and familiarity with Direct Absorption Spectroscopy (DAS), Cavity Enhanced Absorption Spectroscopy (CEAS), and Frequency Modulation Spectroscopy are developed first.	
+
+%-------------------------------------------------------------------------------%			
+		\subsection{Direct Absorption Spectroscopy}
+			\label{subsec:Direct Absorption Spectroscopy}
+			This is the most basic technique of LAS where a beam is directly propagated through a sample of length of L. It is only introduced to be provided as a comparision to the other 3 techniques. The the attenuation absorption of the laser beam is governed by Beer-Lamberts law.
+
+			\begin{equation}
+			\label{eq:BeerLamberts}
+			\dfrac{I(t)}{I_o} = e^{(-\alpha L)}
+			\end{equation}
+			
+			\noindent
+			The minimum detection signal is \cite{NICE-OHMS}
+			
+			\begin{equation}
+			\label{eq:DASlimit}
+			(\alpha L)_{min}=\sqrt{\dfrac{2e\beta}{\eta P_o}}
+			\end{equation}
+			
+			This minimum is never reached though as noise is prominent without lock in techniques at high frequencies which leads to implementation of FMS technique. The minimum detection signal is also not enhanced in any way which leads to use of cavity to utilize CEAS. 
+			
+			\begin{figure} [!ht]
+				\centering
+				\def\svgwidth{\columnwidth}
+				\resizebox{150mm}{!}{\imginput{images/dir-abs-spec.pdf_tex}}
+				\label{fig:dir-abs-spec}
+				\caption{An input beam that is attenuated by a sample about a resonant transition}
+			\end{figure}		
+
+%-------------------------------------------------------------------------------%			
+		\subsection{Cavity Enhanced Absorption Spectroscopy}
+			\label{subsec:Cavity Enhanced Absorption Spectroscopy}
+			In cavity enhanced absorption spectroscopy (CEAS), (gaseous) molecules are typically within the resonating beam of the cavity.
+			The purpose of using a cavity is to narrow the bandwidth of the tunable input beam and to create a greater beam intensity for an enhanced beam-sample interaction. The overall result is a stronger absorption signal and possibly narrower of spectral transition, if the bandwidth of the laser is larger then the cavity resonance width. The minimum detection limit for CEAS is the DAS detection limit (\autoref{eq:DASlimit}) with enhancement from the path length enhancement factor $\dfrac{2\mathcal{F}}{\pi}$.
+			
+			\begin{equation}
+			\label{eq:CEASlimit}
+			(\alpha L)_{min}=\dfrac{\pi}{2\mathcal{F}}\sqrt{\dfrac{2e\beta}{\eta P_o}}
+			\end{equation}
+			
+			The two possible types of interaction of the sample with the output beam are absorption and or scattering of the resonating beam. Here, we only account for Beer-Lambert law which adds an attenuation factor Beer-Lambert absorption factor exp(-$\alpha L_c$/2).
+			Assuming the frequency of the locked beam is at resonance $v=nv_{FSR}=v_n$, then \eqref{eq:res} becomes 
+			
+			\begin{equation} \label{eq:CEAS}
+			\dfrac{I_{out}}{I_{in}^*}(v_n) \approx \dfrac{\mathcal{T}^2 }{({1-\mathcal{R}})^2}  \left(1- \dfrac{2\alpha L_{cav}}{1-\mathcal{R}}\right)
+			\end{equation}
+			
+			\begin{equation} \label{eq:L_c}
+			L_{eff}^{res}=\dfrac{2}{1-\mathcal{R}} L_c 
+			\approx
+			\dfrac{2\mathcal{F}}{\pi} L_c
+			\propto \mathcal{F}L_c
+			\end{equation}		
+			
+			\begin{figure} [!ht]
+				\centering
+				\def\svgwidth{\columnwidth}
+				\resizebox{150mm}{!}{\imginput{images/CEAS-cartoon.pdf_tex}}
+				\label{fig:CEAS}
+				\caption{a) is a cartoon showing a ray of light bouncing back and forth in a Fabry-Perot cavity while interacting with a sample. b) Illustrates a realistic interaction a resonating beam with a sample }
+			\end{figure}
+			
+			\noindent
+			\autoref{eq:L_c} are true as long as the reflectivity of the reflecting surfaces is about $0.999 \approx 1$, ie almost completely reflecting and lossless, and that the bandwidth of the input laser is monochromatic. With a broadband source such as OPO, the effective path is half this value from equation \autoref{eq:L_c}. 
+			The key feature here is equation \autoref{eq:L_c} which is the effective path length of the beam interacting with the sample, analogous to typical broadband UV-Vis absorption spectra, is dependent on the finesse and length of the cavity. 
+			This is due to the nature of light reflecting back and forth at the mirrors inside the cavity. For a cavity with a finesse of $2200$, a 1m cavity has an effective absorption length of about 0.7 to 1.4km (10 from CEAS textbook). 
+			This increases the interaction time of the beam with the molecules allowing great sensitivity in absorption signals required in detecting trace amount of cold molecular ensembles.
+		
+		%-------------------------------------------------------------------------------%				
+		\subsection{Frequency Modulation Spectroscopy}
+			\label{ssec:Frequency Modulation Spectroscopy}
+			The purpose of Frequency Modulation Spectroscopy is to bring the detection rate away from sources of noise from mechanical vibrations, such as impact and sound, and technical oscillations such as laser intensity fluctuations. These sources of noises range from a few hertz to a couple kilohertz for acoustic a couple hundred kHz for laser noise.  By creating sidebands and heterodyning those bands with the carrier beam to create radio frequencies beat signals, the detection rate can be brought to the MHz to GHz region thus eliminating noise from acoustic and laser noise. This results in an improved detection efficiency of the absorption signals. At the cost of detection in the GHz region, the minimum absorption detection limit is degraded by a factor of $\dfrac{J_0(\beta)J_1(\beta)}{2}$, with $J_0 \approx 1$ and $J_1 < 1 $. This degradation is due to conversion of power of the carrier to the sidebands. The resulting detection limit is therefore
+			
+			\begin{equation}
+			\label{eq:FMSlimit}
+			(\alpha L)_{min}=\dfrac{\sqrt{2}}{J_0(\beta)J_1(\beta)}\sqrt{\dfrac{2e\beta}{\eta P_o}}
+			\end{equation}
+			
+			There are two types of Frequency Modulation Spectroscopy: one where frequency is directly modulated and indirectly by phase modulation of the carrier beam. The method that will be discussed is the indirect method because of its integration to the Noise-Immune Cavity-Enhanced Optical Heterodyne Molecular Spectroscopy (NICE-OHMS) technique by Jun Ye. NICE-OHMS is discussed in the following section, \autoref{subsec:Noise-Immune Cavity-Enhance Optical Heterodyne Molecular Spectroscopy}.  A short explanation of modulation can be found in section \autoref{ssec:Modulation} and more formally in the introduction of the papers \cite{PDH Intro} and \cite{FMspec}.
+			
+			By phase modulating a carrier beam with a low modulation index, $\beta$, by the use of electro optic modulator (EOM), sidebands of frequencies $\pm \Omega_m $ away from the carrier beam are generated. The result is 3 frequencies now present in the beam.
+			
+			\begin{equation}
+			\label{eq:sidebands}
+			\tilde{E}_{phase}(t)\approx E_o [e^{i\omega_c t}   +   \dfrac{\beta}{2} e^{i(\omega_c +\Omega_m)t}  -  \dfrac{\beta}{2} e^{i(\omega_c -\Omega_m)t}]
+			\end{equation}	
+			
+			The carrier frequency and sidebands can then be used to interact with the sample to determine the dispersion and absorption properties of the sample. The absorption coefficient is defined to be $\alpha$ of the spectral transitions and $\eta$ for the refractive index of the sample. It is then convenient to define $T_n=e^{-\delta_n -i \phi_n}$, $\delta_n=\alpha_n \dfrac{L}{2}$ and $\phi_n=\eta_n L\dfrac{\omega_c + n\Omega_m}{c}$ where $n=0,\pm1$ for the carrier and sidebands frequencies respectively. Equation \autoref{eq:sidebands}, after propagating through the sample of path length L and having been absorbed and its phase shifted becomes
+			
+			\begin{equation}
+			\tilde{E}_{phase}(t)\approx E_o [T_o e^{i\omega_c t}   +   T_1 \dfrac{\beta}{2} e^{i(\omega_c +\Omega_m)t}  -  T_{-1} \dfrac{\beta}{2} e^{i(\omega_c -\Omega_m)t}]
+			\end{equation}
+			
+			Here the absorption and phase shifted are accounted for within the $T_n$ coefficients of the carrier and sideband frequencies. What is detected though is the intensity of the beams which is proportional to the the magnitude of the complex electric field. Section(\autoref{subsec:Complex Electric Field and Intensity})
+			
+			\begin{equation}
+			\label{eq:IndirectFMsignal}
+			\begin{split}
+			I(t) = \dfrac{c|\tilde{E}_o|^2}{8\pi} e \approx \dfrac{c|\tilde{E}_o|^2}{8\pi}[1-\Delta\delta\beta \cos{(\Omega_m t)+\Delta\phi\beta\sin{(\Omega_m t)}}]
+			\end{split}
+			\end{equation}
+			
+			For equation \autoref{eq:IndirectFMsignal}, to arrive at the approximation it assumed the modulation depth is small, the coefficient and refractive index is the same for all 3 frequencies, and that the n=1 sideband is being used to probe the spectral transition. We then define the pair of definitions: $\delta_{-1}=\delta_0=\bar{\delta}$, $\Delta\delta = \delta_1 -\bar{\delta}$ and $\phi_{-1}=\phi_0=\bar{\phi}$, $\Delta\phi = \phi_1 -\bar{\phi}$. A more detailed derivation can be found in \cite{FMspec}. Probing with the $n=-1$ band would result in a reverse in the polarity of the signal for the same spectral transition.
+			
+			Equation \autoref{eq:IndirectFMsignal} is the indirect heterodyne beat FM radio frequency produce by the phase modulation. Equation \autoref{eq:IndirectFMsignal} contains two 3 terms: the dc component, $\cos{(\Omega_m t)}$, and $\sin{(\Omega_m t)}$. The $\cos{(\Omega_m t)}$ contains information about the relative absorption loss of the sidebands and carrier frequency. The $\sin{(\Omega_m t)}$ contains information about the phase shift of the sidebands and carrier frequency. As discussed in the demodulation and heterodyne section \autoref{ssec:Heterodyne}, dc component contains absorption and dispersion data of the sample.
+		
+		%-------------------------------------------------------------------------------%			
+		\subsection{Noise-Immune Cavity-Enhance Optical Heterodyne Molecular Spectroscopy}
+			\label{subsec:Noise-Immune Cavity-Enhance Optical Heterodyne Molecular Spectroscopy}
+			Noise-Immune Cavity-Enhance Optical Heterodyne Molecular Spectroscopy (NICE-OHMS) is an advanced spectroscopy technique that combines cavity enhanced absorption spectroscopy (CEAS) with frequency modulation spectroscopy (FMS). By combining strong signal of CEAS and improved detection efficiency of FMS, we obtain the ultra-sensitive spectroscopy technique NICE-OHMS. The overall effect is to enhance absorption signal by enhancement of the path length and detection of signal at a rate to the MHz region which is far removed from prominent sources of noises. With use of this technique, we can easily reach the quantum limit level of noise.
+			A more detailed comparison with various spectroscopy techniques with NICE-OHMS can be found in \cite{NICE-OHMS}.
+			
+			With a cavity, only resonant frequencies can be accepted. This is no problem for coupling in just 1 frequency, but with 3 different frequencies, it can be problematic, especially for high finesse cavities.  If the carrier beam is resonant with the cavity, the sidebands will typically not be resonant unless the splitting frequency is small, the resonance widths are large, or the splitting is the same as the free spectral range. Since we want the splitting frequency to be large so that we are the FM limit, the work around that is desired is to couple in the sidebands into adjacent cavity modes by setting the FM splitting frequency to be equal to the free spectral of the cavity. For a 1m cavity, this is $5\times 10^{-3} cm^{-1}$ or 150MHz.
+			
+			This technique is also immune to laser intensity and frequency fluctuations since any fluctuations present in the carrier will also be present in the sidebands. Since the signal is generated by heterodyning the sideband with the carrier, any fluctuation present in carrier will be present in the sidebands thus canceling each other out.
+	\section{Theoretical Calculation of Methyl Radical}
+	\label{sec:Theoretical Calculation of Methyl Radical}
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%		
+\chapter{Optics}
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%
+
+	\section{Gaussian Beam}
+		\label{sec:Gaussian Beam}
+		A Gaussian beam is a beam of electromagnetic radiation with a Gaussian profile for the electric and magnetic field. 
+		To avoid confusion, Gaussian beams are not parallel rays of radiation and the Gaussian beam model is only accurate to within the paraxial limit since the beams exist locally around the propagation axis.
+		The convention is to set the z axis as the direction of propagation where the transverse coordinates, x and y, only vary along a small range about z=0 axis, the propagation axis.
+		
+		The focus in this section is on the $TEM_{00}$, the simplest and most critical Gaussian mode to this experiment. It contains all the parameters for describing the behavior of laser beams. The properties of interest are the k vector($k_z$), electric field intensity and direction (vector) ($\vec{E_o}$), radius of curvature of the phase fronts($R(z)$), Guoy phase, beam waist/focus ($\omega(z)$) and the Gaussian distribution of the beam $\left[ \exp{\bigg[-\dfrac{\rho^2}{\omega^2(z)}\bigg]}\right]$.
+%-------------------------------------------------------------------------------%			
+		\subsection{Gaussian Modes and Guoy Phase}
+			\label{subsec:Gaussian Modes and Guoy Phase}
+			
+			\begin{figure} 
+				\centering
+				\includegraphics[scale=0.9]{images/GaussianMode.png}
+				\caption{\cite{hermite} \cite{Laguerre} The $TEM_{00}$ mode along with the other higher order Hermite modes.}
+				\label{fig:Hermite-gaussian}	
+			\end{figure}
+			
+			There are many different Gaussian modes that can resonate within a cavity, but the $TEM_{00}$ mode is the simplest and lowest order Gaussian beam solution to the Helmholtz equation. 
+			Higher order modes possess nodes that can be axial in the case for Hermite are denoted by $TEM_{xy}$. Analogous to the electron orbitals, the higher the number of nodes, the higher the energy of the mode and lower the stability of the mode.
+			
+			The complex electric field of the $TEM_{00}$ mode is 
+			
+			\begin{equation}
+				\label {eq:Gaussian Beam}
+				\vec{\textbf{E}}(\rho,z)=\vec{\textbf{E}}_\textbf{o}\frac{\omega_{0}}{\omega(z)} \exp\bigg[\dfrac{-\rho^2}{\omega^2(z)}\bigg] \exp\bigg[ik_z z - i \tan^{-1}\bigg(\frac{z}{z_0}\bigg)\bigg]\exp\bigg[ik \dfrac{\rho^2}{2R(z)}\bigg]
+			\end{equation}
+			
+			\begin{equation}
+				\label {eq:Guoy Phase}
+				\text{Guoy Phase}:\quad \zeta = \exp\left(-i\tan^{-1}{\dfrac{z}{z_o}}\right)
+			\end{equation}
+			
+			\noindent
+			Higher order modes just contain \autoref{eq:Gaussian Beam} multiplied by some linear combination of the polynomial basis sets, such as Hermite and Laguerre in combination with modification to the Guoy Phase.
+		
+%-------------------------------------------------------------------------------%
+		\subsection{Polarization}
+			\label{subsec:Polarization}
+			The direction of the electric field is always orthogonal to the direction of propagation(convention is along the z axis). The electric field can point in either the x, y or a combination of both. This is known as the polarization of the beam. There can also be an associated phase shift for one of the component direction resulting in elliptically or circularly polarized light.
+			
+			Polarization is useful since it allows for the separation of a beam based on this property without affecting its frequency (dispersion relation) or trajectory. This can be see in figure \autoref{fig:ircease-setup}
+	 where the back reflection and input beam are seperated by their orthogonal polarization at the polarized beam splitter.
+			
+%-------------------------------------------------------------------------------%
+		\subsection{The K vector}
+			\label{subsec:The K vector}
+			The k vector is given, by eq(\autoref{eq:kvector}), contains information about the wavelength(frequency) and direction of propagation.
+			
+			\begin{equation} 
+				\label{eq:kvector}
+				\vec{k} = \langle k_x,k_y,k_z \rangle, \qquad |\vec{k}|=\dfrac{2\pi}{\lambda}
+			\end{equation} 
+		
+			
+			\begin{figure} [!ht]
+				\centering
+				\def\svgwidth{\columnwidth}
+				\resizebox{16cm}{!}{\imginput{images/gaus-beam-prop.pdf_tex}}
+				\caption{In this figure, the Gaussian Beam's properties are shown at various z: z=0 and the Rayleigh lengths to help visualize the Gaussian Beam.
+					\newline
+					{\bfseries (A)}The Gausian intensity distribution along transverse planes at various z values
+					\newline
+					{\bfseries (B)}Intensity distribution along a section in the transverse plane at the focus and  $z=z_\alpha$.
+					\newline
+					{\bfseries (C)}A plot of the waist size of a Gaussian beam and constant phase of the electric field to illustrate the plane wave and spherical wave limits in the curvature of a beam
+					\newline
+					{\bfseries (D)} Plot of the radius of curvature, flat wavefronts have infinite curvature while spherical wave have linearly increasing curvature} 
+				\label{fig:gaus-beam-prop}
+			\end{figure}	
+			
+%-------------------------------------------------------------------------------%				
+		\subsection{Complex Electric Field and Intensity}
+			\label{subsec:Complex Electric Field and Intensity}
+			Note that the equation provided in \autoref{eq:Gaussian Beam} is the complex representation of the electric field. Using complex representations greatly simplifies the math since taking derivatives of exponentials is simpler and cleaner than taking derivatives of sinusoidal functions. The imaginary component can then be taken out by multiplying \autoref{eq:Gaussian Beam} with its complex conjugate or simply ignored, depending on the desired extracted properties. To extract information about intensity and interference patters, what desired is the magnitude of eq(\autoref{eq:Gaussian Beam}) in the complex plane. 
+			The real electric field is just the real component of \autoref{eq:Gaussian Beam}, ie completely ignore the imaginary component. This is mathematically shown in equation \autoref{eq:Intensity} below.
+			
+			\begin{equation} 
+				\vec{E}(\rho,z)=Re[\vec{\textbf{E}}(\rho,z)], \qquad
+				\textit{I} \propto |\vec{\textbf{E}}(\rho,z)|^2=\vec{\textbf{E}}(\rho,z)\cdot \vec{\textbf{E}}^*(\rho,z)
+				\label{eq:Intensity}
+			\end{equation}
+			
+			The Gaussian distribution property is important in physically aligning a beam that is not visible with our eyes or a scope. By detecting the intensity of a beam, the location and width can be determined. The following equations in \autoref{eq:Intensity} can also be used to solve for the interference of pattern of 2 or more beam, an important tool for Pound-Drever-Hall locking technique and Frequency Modulation spectroscopy.
+			
+%-------------------------------------------------------------------------------%					
+		\subsection{Divergence and Spread}
+			\label{subsec:Divergence}
+			Gaussian beams have a natural spread characterized by their divergence.
+			This results in the spreading of the beam which causes the Gaussian beam to grow larger and thus diluting the intensity of the beam.
+			This natural spreading also causes the size of the beam to always be infinite, where the thinnest waist size of the beam is known as the focus. 
+			
+			\begin{equation}
+				\omega (z)=\omega_o \sqrt{1+\left(\dfrac{z}{z_o}\right)^2}
+			\end{equation}
+			
+			is at its lowest and is usually set to $z=0$ with $\omega(z)|_{z=0}=\omega_o$.
+			Mathematically, the gaussian beam is a paraboloidal wave with respect to z in the complex plane. 
+			This means that the beam is mathematically zero at $z=i z_o$ but this is along the imaginary axis and thus has no real physical meaning. 
+			This is an important fact used in the ABCD law for describing the transformation of the gaussian beam via thin lens and spherical mirrors.
+			
+%-------------------------------------------------------------------------------%
+		\subsection{Wavefront and Curvature}
+			\label{subsec:Wavefront and Curvature}
+			Wavefront are the locations of the beam where the phase of the beam is constant, such as 0 or $\pi$. For plane waves, phase fronts occur along a transverse plane or as shown in \autoref{fig:wavefront}, along a straight line for all x values at a fixed z value. The surface produced by the wavefronts are flat, no curvature. For spherical wave, the wave fronts are spherical with the linearly increasing radius as the wave propagates. An alternative to description of the wavefronts is curvature $\kappa = 1/R$ which is just the inverse of the radius.
+			The Gaussian beam is a mix of a plane wave and spherical wave making a it essentially a mix between the two. This phase front information is contained in the 
+							
+			\begin{figure} [!ht]
+				\centering
+				\def\svgwidth{\columnwidth}
+				\resizebox{16cm}{!}{\imginput{images/wavefront.pdf_tex}}
+				\caption{To illustrate the curvature of the wavefronts of various models} 
+				\label{fig:wavefront}
+			\end{figure}	
+			
+			The Gaussian beam can be approximated by a plane wave close to the focus or if the beam well collimated. 
+			A collimated beam has a very low spread and is approximately the same diameter at large propagation distances. 	
+			
+%-------------------------------------------------------------------------------%					
+	\section{Thin Lens and Spherical Mirrors}
+		\label{sec:Thin Lens and Spherical Mirrors}
+		Here quick statements and properties of converging lens and mirrors are discussed so that the interaction of the gaussian beam and mirrors or lens are understood, as well as their connection to ray optics. From ray optics, the transformation of planewave and spherical wave limits upon interaction of spherical lens are derived where the ABCD law expands upon these results to describe more practical and realistic Gaussian beam.
+		
+		A common optical element everyone has seen is a magnifying glass which contains a singular large converging lens. 
+		This lens can be used to magnify or reimage spherical point emitters from nearby objects or focus plane wave radiation from the sun to the focal point depending on how far away the lens is examined from.
+		The focal point of a lens or mirror, in the plane wave limit, is the transverse plane where plane waves are focused to. 
+		Input beams with small tilt angles are slight shifted up or down depending on the sign of the tilt, a very useful property where an iris can be placed to clean the Gaussian beam. 
+		The general relation between the focus of the input wave and output wave is given below in \autoref{focal} where the 0 is at the location of the optical element. 
+		For a spherical element, the magnitude of the focal length is half the radius of the spherical element, $f=R_{element}/2$ and is positive for converging lenses and negative for diverging lenses.
+		
+		\begin{equation}\label{focal}
+			\frac{1}{f}=\frac{1}{z_{output}}-\frac{1}{z_{input}}
+		\end{equation}
+		
+		\begin{figure} [!ht]
+			\centering
+			\def\svgwidth{\columnwidth}
+			\resizebox{160mm}{!}{\imginput{images/lens-reimage-focus.pdf_tex}}
+			\caption{
+				This figure illustrates the connection between the simple ray optics properties of lenses and ABCD gaussian beam model. Lens are mostly transmitting at the wavelength of interest.
+				\newline 
+				a) Here the lens maps the point emiting spherical waves at $z=-z_o$ to $z=z_1$. There is a flip of the image at $z_1$ relative to $z_0$ which explains why magnifying glasses when viewed far enough, appear flipped.
+				\newline
+				b)For a gaussian beam at the spherical limit, a lens refocuses a beam at $-z_o$ to $z_1$
+				\newline
+				c)Plane waves are focused to the focal point. Where the plane is mapped to on the focal point depends on the angle of the beam relative to the lens axis.
+				\newline
+				d)For a Gaussian beam where the lens is located at the focus, very similarly to the plane wave limit, the beam is focused at the focal plane. Any beam coming in at a angle will be mapped above or below}
+			\label{fig:lens-reimage-focus}
+		\end{figure}
+		
+		Since the gaussian beam is a mix of plane and spherical wave model, the slightly more advanced ABCD law is required where the matrix transformation acts on the zero of the complex paraboloidal wave in the complex plane of the propagation axis, z.
+		The location of the zero of the paraboloid is at $z=-iz_o$ which is a purely imaginary number thus has no physical interpretation, consistent with the fact that the size of a beam is always finite.
+		Any transformation at the zero location in the complex plane though carries over to the real axis where the beam physically exists.
+		Visually, the result of the transformation is that the wavefront curvature of the output beam is approximately matched to the curvature of the input surface.
+		This is supported by the eikonal equation from ray optics \cite{SalehTeichs}.
+		Illustrations can be shown below in \autoref{fig:Mirrors}. 
+		The use of these results will be illustrated in mode matching and resonating beams in \autoref{sec:Optical Cavity and Resonance Properties} and \autoref{sec:Aligning the IR Cavity}.
+		
+		\begin{figure} [!ht]
+			\centering
+			\def\svgwidth{\columnwidth}
+			\resizebox{160mm}{!}{\imginput{images/Mirrors.pdf_tex}}
+			\caption{\cite{SalehTeichs} Mirrors are mostly reflecting at the wavelength of interest.
+				a) Planar mirror with $R=\infty$ \quad b) Radius of the coated surface is some value $R_o$ \quad c) Here the focus of the beam is exactly at the focal point of the mirror which is half the radius of the surface.
+			}
+			\label{fig:Mirrors}
+		\end{figure}	
+		
+		Mirrors have almost the exact same transformation properties of thin lenses except now the transformed beam travels in the reverse direction, ie the k vector is transformed. \autoref{fig:Mirrors} shows how mirrors reflect Gaussian beams where the dash lines represents the beam if it was transmitted like a lens.
+		The transmitting and reflectivity property of mirrors and lenses are described by reflectivity coefficient. 
+		Highly reflecting materials are classified as mirrors, they usually consist of metals or thin coatings. 
+		Lens are specialized pieces of glass that are transparent to certain range of frequencies.
+		Assuming minimal loses of energy to the material, the percentage of radiation that is reflected and transmitted is approximately 1. 
+		The reflectivity coefficient of an optical element is $r$ and the reflectiveness of the lens is $\mathcal{R}=|r|^2$. The percentage of light reflected is given by R though and thus must be completely real.
+		
+		\begin{equation}\label{reflectivity}
+			|r|^2+|t|^2=1, \quad |r|^2=\mathcal{R}, \quad |t|^2=\mathcal{T}, \quad \mathcal{R}+\mathcal{T}=1
+		\end{equation}
+		
+		Note reflectivity and transmission coefficient, little r and little t, can be complex numbers resulting in phase shifts of the transformed wave. More info about ray optics and beam optics can be found in ref\cite{SalehTeichs} and \cite{steck} in their respective chapters.
+		
+%-------------------------------------------------------------------------------%	
+		\subsection{Double Lens System}
+			\label{subsec:Double Lens System}
+			A double lens system is exactly what a sounds like, it consists of a pair of two lenses that can be used to resize, recollimate, and or relocate the focus of a beam. Reshaping and moving the focus of a beam is important for efficient coupling of power into a cavity.
+			
+			\begin{figure} [!ht]
+				\centering
+				\def\svgwidth{\columnwidth}
+				\resizebox{160mm}{!}{\imginput{images/double-lens-system.pdf_tex}}
+				\caption{The important concept is that the focus and size of beam can be modified by two lens by varying the distance between the two lenses. For this plano convex lens system in particular, as the second lense is moved further away, the wider and closer the focus is to the lens.
+				}
+				\label{fig:double-lens-system}
+			\end{figure}
+%-------------------------------------------------------------------------------%			
+%-------------------------------------------------------------------------------%			
+	\section{Optical Cavity and Resonance Properties}
+		\label{sec:Optical Cavity and Resonance Properties}
+		An optical cavity is a type of resonator that uses mirrors with high reflectivity to store optical energy of specific frequencies. Cavities are typically used for reducing the bandwidth and/or collimation of an input Gaussian beams. The Fabry Perot is the simplest stable type of cavity for resonating Gaussian Beams consisting of 2 planar mirrors with resonant beam being plane waves. Optical power build up for frequencies that form a standing wave after 1 round trip within the cavity.The frequencies that satisfy this periodic condition. 
+		
+		\begin{equation}\label{eq:resonantfreq}
+			\nu_q=\dfrac{cq}{2L_{eff}}, \qquad \tilde{\nu}_q=\dfrac{q}{2L_{eff}}
+		\end{equation}
+		
+		The spacing between frequencies and wavelengths that satisfy this condition is know as the free spectral range.
+		
+		\begin{equation}\label{eq:FSR}
+			\nu_{fsr}=\dfrac{c}{2L_{eff}}, \qquad \tilde{\nu}_{fsr}=\dfrac{1}{2L_{eff}}
+		\end{equation}	
+		
+		If the resonant condition is not met, the radiation will interfere deconstructively with itself, similar to a Michelson interferometer, and exit back out through the input mirror.			
+		
+		\begin{figure} 
+			\centering
+			\def\svgwidth{\columnwidth}
+			\resizebox{160mm}{!}{\imginput{images/feb-per-cav.pdf_tex}}
+			\caption{Fabry Perot Cavity with two input beam, a resonant beam labelled by red and a non resonant beam labelled with green.}
+			\label{fig:feb-per-cav}
+		\end{figure}
+		
+		The intensity output spectrum of the cavity takes of a simple unrealistic monochromatic waves is
+		
+		\begin{equation} \label{eq:res}
+			\centering
+			{I_{out} (v)}=\dfrac{I_{max}}{1+\bigg(\dfrac{2\mathcal{F}}{\pi}\bigg)^2 \sin^2\bigg({\dfrac{\pi v}{v_{FSR}}}\bigg)}=\dfrac{I_{max}}{1+\left(\dfrac{2\mathcal{F}}{\pi}\right)^2 \sin^2\left({ \dfrac{2\pi}{\lambda}} L_{cavity}\right)}
+		\end{equation}
+		
+		r and t are the transmission and reflection coefficient of the two reflecting surfaces of the mirrors in the cavity with r $\approx 1$.
+		
+		\begin{figure} [!ht]
+			\centering
+			\def\svgwidth{\columnwidth}
+			\resizebox{160mm}{!}{\imginput{images/cav-res-profiles.pdf_tex}}
+			\caption{\cite{steck}Cavity output at Various Finesse with FWHM shown. Higher Finesses result in lower broadness of the signal. The profiles with respect to wavelength and cavity length are identical to this plot. }
+			\label{fig:cav-res-profiles}
+		\end{figure}			
+
+%-------------------------------------------------------------------------------%			
+		\subsection{Input Beam and Cavity Coupling}
+			include in this section about inputting a beam frequency to one of the resonating modes of a cavity.
+%-------------------------------------------------------------------------------%	
+%-------------------------------------------------------------------------------%				
+	\section{Cavity Alignment}
+		\label{sec:Cavity Alignment}
+		This cavity section consists of 2 sub-subsections, detailing the properties of resonating Gaussian beams within a stable cavity, stability conditions, effects of improper alignment due to beam displacements and mode mismatching.
+	
+%-------------------------------------------------------------------------------%	
+		\subsection {Resonance Stability}
+			\label{ssec:ResonaceSability}
+			A more practical cavity consists of spherical mirrors instead of planar mirrors discussed in \autoref{sec:Optical Cavity and Resonance Properties}. 
+			The resonating beam of spherical mirrors is Gaussian beams instead of the simple plane wave in the Fabry Perot cavity. The focal point of resonating beams are dependent on the position and types of mirrors used. 
+			
+			The resulting modes are Gaussian since the mirrors apply the phase condition that the wavefronts of the resonating beam must approximately match the spherical curvature of the mirrors.
+			Each Gaussian mode has an altered associated Guoy phase shift factor which requires each mode to have a slightly altered resonating condition in the Fabry Perot section for resonating plane waves in \autoref{sec:Optical Cavity and Resonance Properties}. The result is that different modes appear at different stroke shifts.
+			
+			\begin{figure} [!ht]
+				\centering
+				\def\svgwidth{\columnwidth}
+				\resizebox{160mm}{!}{\imginput{images/cav-types.pdf_tex}}
+				\caption{This figure just illustrates a quick way to visualize the beam that can resonate within a cavity consisting of two mirrors of various curvatures.
+				}
+				\label{fig:cav-types}
+			\end{figure}	
+			
+			The modes that strongly resonate depends on the conditions set by the spherical mirrors and the alignment of the input beam.
+			How to maximize the $TEM_{00}$ and minimize all other modes are discussed in alignment and mode matching \autoref{subsec:Beam Displacement and Mode Matching}.
+		
+%-------------------------------------------------------------------------------%		
+		\subsection {Beam Displacement and Mode Matching}
+			\label{subsec:Beam Displacement and Mode Matching}
+			
+			\begin{figure} [!ht]
+				\centering
+				\def\svgwidth{\columnwidth}
+				\resizebox{150mm}{!}{\imginput{images/cav-1um-output.pdf_tex}}
+				\caption{a)The large peaks correspond to the desire $TEM_{00}$ mode. b) the dominant Hermite modes boxed in purple. c) the dominant Laguerre modes are circled in green.
+				}
+				\label{fig:cav-1um-output}
+			\end{figure}		
+			I still need to investigate this more
+			In order for a beam to resonate strongly in the $TEM_{00}$ mode, the propagation of the input beam must be aligned close to parallel to the cavity axis.
+			The cavity axis is the axis where the resonating beam to obtain a strongly resonating $TEM_{00}$ Gaussian beam. Deviations from the cavity axis from displacements and mismatches result in no resonance or coupling of optical power into to the less stable higher order. In order for the cavity axis to be well defined, the mirror axis of both cavity mirrors must be aligned with each other. Overall, to obtain resonating conditions, the two mirror axes, cavity axis, and propagation axis of the beams must be well aligned.
+			
+			There are two categories of improper alignments issues, misalignments and mismatches. For misalignments, the two types of problems are transverse displacements and tilt angles. Both of these alignment issues will result in vertical or horizontal nodes appearing of the resonant beam. The higher order the mode, the larger the deviation from alignment. 
+			Mismatches refers to the modes and focus of the input and resonating beam not matching. These two types of alignment issues result in stronger resonance of the Laguerre modes within the cavity. In order to match the input beam with the resonating beam(modematching), two lenses are used to reshape the input beam. When the input beam is well matched the presence of the Laguerre mode should decrease along with an increase in coupling of power into the cavity. \autoref{fig:cav-1um-output} is an image of a poorly resonating beam that is not mode matched well. 
+
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%	
+%-------------------------------------------------------------------------------%	
+\chapter{Techniques}
+
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%	
+	\section{Distributions and Convolutions}
+		\label{sec:Distribution}
+		A Distribution is a tool or object that describes how a random variable is spread out(distributed). The two important properties of a distribution is the average and the spread. The average describes the location of the distribution while the spread describes how wide or narrow the distribution is. The simplest method of explaining what a distribution is by giving a few examples, as the technical mathematical and statistical explanations have too much jargon. 
+		
+		The distribution that show up are the Gaussian, Lorentzian, Uniform, and the Voight distribution. The Voight distribution is a convolution of the Gaussian and Lorentzian distribution. In other words, a convolution is a mixing of 2 (or more) distribution.
+		
+		Distributions are important concepts as they are used to describe the frequency profile of the Gaussian beam, cavity resonance, intensity distribution, absorption signal and so on. Knowing the type of distribution for a given physical variable allows us to determine the limit and validity of our signal, and so forth.
+		
+		%-------------------------------------------------------------------------------%	
+		\subsection{Gaussian Distribution}
+			\label{ssec:GaussianDistribution}
+			The Gaussian distribution is the easiest to recognize distribution and sometimes referred to as the bell curve when referring to grade distribution of a class of students. A normal distribution is just the normalized distribution of a Gaussian distribution which describes its probability density. A normalized Gaussian distribution follows the equation
+		
+		\begin{equation}
+			f(x|\mu,\sigma)
+		\end{equation}
+		
+		%-------------------------------------------------------------------------------%	
+		\subsection{Lorentian Distribution}
+			\label{ssec:LorentianDistribution}
+		
+		%-------------------------------------------------------------------------------%	
+		\subsection{Convolutions of Distributions}
+			\label{ssec:convolution}
+
+	\section{Modulation and Heterodyne Principle}
+		Modulation and heterodyning are techniques typically used in series to modify or transform a signal of some sort into another form that is more readily detectable and useful. For example, in the PDH locking technique, the carrier beam is modulated to generate sides bands which create a signal in the back reflection. The detector signal from the back reflection is then heterodyne with a local oscillator to produce the PDH error signal for locking.
+
+		\subsection{Modulation}
+			\label{ssec:Modulation}
+			This section is to provide basic knowledge of modulation of a carrier waves and the heterodyne principle to aid in understanding of the complicated techniques used in this experiment, particular (so far) for Pound-Drever- Hall locking technique. Modulation and demodulation is a technique that is widely used in telecommunications, such as in cellphones and radio transmissions, to efficiently extract small of information stored in the modulation. Experimentally, this modulation data is stored in the spectral transition data for frequency modulation spectroscopy and NICE-OHM spectroscopy, the error signal of Pound-Drever-Hall locking technique and the more basic lock in amplification.
+			
+			The essential idea is to encode information in electric field of electromagnetic radiation either in the amplitude, frequency, or phase. This can be done by varying the power of the laser or by the use of nonlinear crystals. Here a simple plane wave traveling in some arbitrary direction. The magnitude of the modulation is define as the modulation depth/index which is denoted by $\beta$.
+			
+			\begin{equation}
+				\tilde{E}(t)=\left(A_o\right)e^{i(\left[\omega_c\right] t + \left(\phi)\right)}
+			\end{equation}
+			
+			Amplitude modulation involves varying the amplitude of wave with time such as with a sine function, $A(t)=\beta \sin{\Omega_m t}$ which will result in
+			
+			\begin{equation}
+				\tilde{E}_{Amplitude}(t)=A_o\left(1+\beta \sin{\Omega_m t}\right) e^{i(\left[\omega_c\right] t + \left(\phi)\right)}
+			\end{equation}
+			
+			Time varying the frequency/wavelength with a sine function will result frequency modulation
+			
+			\begin{equation}
+				\tilde{E}_{frequency}(t)=\left(A\right) e^{i(\left[\omega_c (1+\beta \sin{\Omega_m t}\right)] t + \left(\phi)\right)}
+			\end{equation}
+			
+			And finally phase modulation, the modulation technique of most interest in this thesis
+			
+			\begin{equation}
+				\tilde{E}_{phase}(t)=\left(A\right)e^{i(\left[\omega_c \right] t + \left(\beta \sin{\Omega_m t})\right)}
+			\end{equation}	
+				
+			The given equations are the time domain signals but the action of the modulation can be better described in their frequency domain. With the case for phase modulation, as long as the modulation index,$\beta$, is small, first order sidebands with $\omega \pm \Omega $ will be generated. Higher order sidebands containing interger multiples of $\pm \Omega$ are also present but are ignored as they contain higher orders of the modulation index which is assumed to be very small. More rigorous proofs can be seen in FM spectroscopy paper \cite{FMspec} and PDH locking technique paper \cite{PDH Intro}. In short, there are only 3 important frequencies after phase modulation to most techniques using phase modulation: the carrier frequency $\omega_c$ and two side bands $\omega_c$ 
+			
+			\begin{equation}
+				\tilde{E}_{phase}(t)\approx E_o [e^{i\omega_c t}   +   \dfrac{\beta}{2} e^{i(\omega_c +\Omega_m)t}  -  \dfrac{\beta}{2} e^{i(\omega_c -\Omega_m)t}]
+			\end{equation}
+			
+			Include picture with carrier frequency and side bands with frequency noted here
+			This transformation from the time domain phase modulated to side can be described via a taylor expansion about the carrier frequency with modulation depth, $\beta$, assumed to very small. Alternatively, a more complicated calculation with a fourier transform can be done. I have yet to try the fourier transform.
+
+		\subsection{Demodulation by Heterodyne Principle}
+			\label{ssec:Heterodyne}
+			The Heterodyne principle is action of multiplying or mixing two sinusoidal waveforms which can be also be expressed as a sum of two sinusoidal waveforms whose frequencies are given by the sum and difference of the two mixed waveforms.\cite{MITModulation}. For example, if a photo-current from a photo-detector contains some sinusoidal components with a defined modulation frequnecy, then it can be extracted via the use of the Heterodyne principle. This is known as demoulation where we extract the information stored from the modulation. With some current signal containing two sinusoidal components of the same frequency, $\Omega_m$.
+						
+			\begin{equation}
+				I_a(t)=I_1 (t) +I_2 (t) I_{noise}(t)= A_1 \cos{\Omega_m t} + A_2 \sin{\Omega_m t} +\sum_{\omega_i}^{} a_i \cos{(\omega_i t + \phi_i)}
+			\end{equation}
+			
+			The \text{$I_1(t)=A_1 \cos{\Omega t}$} or \text{$I_2(t)=A_2 \sin{\Omega t}$} term can be extracted by demodulation via the use of the Heterodyne principal by mixing the photo-current signal with a sinusoidal current from a local oscillator of frequency $\Omega_{lo}$ with some phase $\phi_{lo}$. The noise terms will result in 0 signal after heterodyning so they will be ignored here on out.
+		
+			\begin{equation}
+				\begin{split}
+				I_b(t) &=I_a(t) \times B\cos(\Omega_{lo}t +\phi_{lo}) =(I_1 (t) +I_2 (t))*B\cos(\Omega_{lo}t +\phi_{lo}) \\
+				& = A_1 B \cos{(\Omega_m t)}\cos(\Omega_{lo}t +\phi_{lo}) + A_2B \sin{(\Omega_m t)}\cos(\Omega_{lo}t +\phi_{lo}) \\
+				& = \dfrac{A_1 B}{2} \left[ \cos{\left(\left(\Omega_m+\Omega_{lo}\right)t+\phi_{lo}\right)}  + \cos{\left( \left( \Omega_m - \Omega_{lo} \right)t +\phi_{lo}        \right)}                                    \right]\\
+				& + \dfrac{A_2 B}{2} \left[ \sin{\left(\left(\Omega_m+\Omega_{lo}\right)t+\phi_{lo}\right)}  + \sin{\left( \left( \Omega_m - \Omega_{lo} \right)t -\phi_{lo}        \right)}                                    \right]\\
+				\end{split}
+			\end{equation}			 
+		
+			The goal now after mixing with the local oscillator is to rid of the plus combination of the two waveforms. With current in this form, this can be done with a low pass filter which will filter out high frequency components, ie the plus combination of the two sinusoidal waveforms.
+		
+			\begin{equation}
+				I_c(t) = \dfrac{A_1 B}{2} \left[\cos{\left(\left(\Omega_m-\Omega_{lo} \right)t +\phi_{lo}\right)}\right]
+				+\dfrac{A_2 B}{2}\left[\sin{\left(\left(\Omega_m-\Omega_{lo}\right)t-\phi_{lo}\right)}\right]
+			\end{equation}					
+			
+			If we tune the local oscillator frequency so that frequency is equal to the modulation frequency and set the phase to be 0, ie $\Omega_{lo}=\Omega_m$ and $\phi_{lo}=0$, then we have obtained a dc component representation of the cosine term. This dc component can also be amplified for easier detection.
+		
+			\begin{equation}
+				I_d(t) = \dfrac{A_1 B}{2}
+			\end{equation}	
+		
+			If say, we instead set the phase of the local oscillator to be 90 degrees out of phase, ie $\cos(\Omega t + 90^o)=\sin(\Omega t)$, then we can extract the sine component of $I_a(t)$.
+			
+			In summary, by mixing a signal containing various waveforms of various frequency with a reference waveform of variable frequency and phase, the individual waveforms components can be experimentally extracted. To chemist who actually like with quantum mechanics, this is analagous to operating a general wave function with a state projection operator to obtain the component weight of the state.
+
+	\section{Feed Back Control Theory}
+		\label{sec:Feed Back Control Theory}
+		asadfasdf talk a bit about feedback loops, include the book used for feedback control theory
+
+	\section{Pound Drever Hall Locking Technique}
+		\label{sec:Pound Drever Hall Locking Technique}
+		
+		\begin{figure} [!ht]
+			\centering
+			\def\svgwidth{\columnwidth}
+			\resizebox{160mm}{!}{\imginput{images/PDH-setup.pdf_tex}}
+			\label{fig:PDHSetup}
+			\caption{a) is a cartoon showing a ray of light bouncing back and forth in a Fabry-Perot cavity while interacting with a sample. b) Illustrates a realistic interaction a resonating beam with a sample }
+		\end{figure}
+		
+		The locking of a cavity refers to locking one of the cavity modes to the frequency of the laser beam so that optical power build may resonate and build up in optical power.
+		The locking technique utilized is Pound Drever Hall (PDH) technique with high frequency modulation. This method of locking the lasing system was chosen due to its high sensitivity about the cavity resonance, fast response to frequency fluctuation and its ability to distinguish which side of the cavity resonance the laser frequency is relative to resonance \cite{PDH Intro}. The cost of utilizing this technique is the accompanied difficulty and complexity of this technique but a tight lock is required to minimize locking noise due to frequency modulation to amplitude modulation accompanied with the use of a cavity. In this technique, the incoming laser frequency beam is propagated through a crystal which modulates its phase, generating side bands with first order frequency differing by $\pm \Omega$ from the carrier wave.
+		
+		\begin{equation}
+			\begin{split}
+			E_{inc} & = E_o e^{i(\omega t + \beta\sin{\Omega t})}\\
+			& \approx E_o \Big[J_o(\beta) e^{i\omega t} 
+			+J_1(\beta)[e^{i(\omega +\Omega)t} +e^{i(\omega + \Omega)t}]\Big]
+			\end{split}
+		\end{equation}
+		
+		The approximation of the modulated wave is done by expansion of the Bessel functions with higher order terms ignored, or alternatively by the fourier transform of this time domain signal like in FTIR. This approximation is good when the modulation intensity is small, ie $\beta < 1$. What we are really interested in though is the intensity of the back reflection beam, not the cavity output beam, from the cavity since that is where the error signal is. At close to resonance and high frequency modulation, large $\Omega$, the carrier beam is assumed to be completely non reflecting, simplifying our power equation, $P_{\text{ref}}\propto |E_{ref}|^2$.
+		
+		\begin{equation}
+			\begin{split}
+			P_{ref} & = P_s\Big[|F(\omega +\Omega)|^2+|F(\omega -\Omega)|^2\Big]\\
+			& + 2\sqrt{P_c P_s} \space \text{Im}  \big[ F(\omega)F^*(\omega - \Omega)-F^*(\omega) F(\omega - \Omega) \big]\sin (\Omega t)+(2\Omega terms)\\
+			\end{split}
+		\end{equation}
+		
+		\begin{equation}
+			F(\omega)=\frac{E_\text{reflected}(\omega)}{E_\text{incoming}(\omega)}
+		\end{equation}
+		
+		The dc and the 2$\Omega$ analog component signals are filter out. The leftover term is amplified and mixed with a local sinusoidal oscillator, with frequency $\Omega' = \Omega$, that can be varied with phase just like in lock in amplification \autoref{sec:Lock in Amplification}. The two signals are then mixed and after filtering of low frequency and dc component the final resulting error signal is
+		
+		\begin{equation}
+			\text{Error Signal}= A_o \sqrt{P_c P_s} \text{Im}\big[F(\omega)F^*(\omega - \Omega)-F^*(\omega) F(\omega - \Omega) \big]\sin((\Omega + \Omega')t)
+		\end{equation}
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[scale=0.55]{images/PDH_High_mod}
+			\caption{ The Pound-Drever Hall error signal of Low and High Frequency modulation respectively, Normalized Intensity vs $\omega /\Delta v_{\text{fsr}}$ \cite{PDH Intro} } 
+			\label{HFM PDH}
+		\end{figure}
+		
+		At a given free spectral  range, the intensity of the signal is 0 and quickly increases or decreases depending on which side the laser frequency drifts. 
+		High frequency modulation is preferred over low frequency modulation since the slope is steeper with respect to resonance, allowing for a stronger and faster feed back signal to cancel out fluctuations in laser frequency drift. The signal generated to correct for such drifts was done by a PI controller.
+		
+		A more complete derivation and explanation can be found at \cite{PDH Intro}.
+		
+		\subsection{PI controller}
+			\label{subsec:PI controller}
+			A Proportion Integral controller is used to maintain a stable condition or state by use of an error signal. In the case of PDH locking, this controller locks the error signal to a given offset that corresponds to resonance. If the cavity is too far from resonance, the cavity becomes unlocked and the output voltage must be offset to obtain cavity resonance.
+			PID controllers have a computer which will use an error signal to create an output signal to maintain resonance. The error signal will vary with time $e(t)$ due to noise.
+			
+			\begin{equation}
+				u_{input}(e)=K_{Proportion}e(t)+K_{Integral} \int{e(t)dt} +K_{derivative} \frac{d}{dt}e(t)
+			\end{equation}
+			
+			The controller that we use only calculates the the proportion and integral calculation hence PI controller and is missing the derivative component which is not nearly as important.
+			This output signal intensity and polarity are then modified and sent to the cavity piezo to compensate for fast and slow fluctuations of the cavity length. In short, this output signal will then be used to maintain cavity resonance with the carrier wave from the OPO laser. 
+			
+			Some of the important variable functions of the controller PI corner knob, intensity of the proportion and integral signal, the servo mode and the 9db corner. 
+			
+			The PI corner knob sets the rate at which the proportion and integration calculations are done by the computer. Higher settings result in shorter delays in between output signals and more output signals in a given period. 
+			
+			There are amplifier knobs for the proportion and integral adjust the intensity of these component signals. Someone explain to me what this knob does please, I am desperate to know.
+			Finally the Servo Mode mode affects the calculation the computers does for an input error signal for example, acquire is when the computer does no calculation when it receives the error signal. Pro stands for when the proportion calculation is sent and 6db, 6db+ are when the integration term begins I believe.
+		
+	
+	
+	\section{Lock in Amplification}
+		\label{sec:Lock in Amplification}
+		Lock-in amplification is used to detect tiny alternating current (AC) signals. This technique allows for detection of signals with a intensity of nanovolts in the presence of large amounts of noise. A typical AC signal can be a sine wave, square wave or some form of periodic signal.
+		
+		\begin{equation} \label{eq:signal}
+			A_{signal} = A_{sig} \sin({\omega_{sig} t + \phi_{sig}}) 
+		\end{equation}
+		
+		By multiplying the AC signal of interest with a similar reference signal with equal frequency and phase, the signal of interest can be selected from a large background of noise as long as noise level at this frequency is low. 
+		
+		\begin{equation}
+			\begin{split}
+			A_{PSD} =
+			= \frac{1}{2} A_{sig} A_{ref}\big[\cos{[(\omega_{sig}-\omega_{ref})+(\phi_{sig}-\phi_{ref})]} 
+			+ \cos{[(\omega_{sig}+\omega_{ref})+(\phi_{sig}+\phi_{ref})]}\big] 
+			\end{split}
+			\label{eq:PSDsignal}
+		\end{equation}
+		
+		With $\omega_{sig}=\omega_{ref}$ and filtering of the high frequency term, $\omega_{sig}+\omega_{ref}$, leaves a new DC signal that is proptional to the AC signal. \cite{LIA}
+		
+		\begin{equation}
+			A_{psd}=\frac{1}{2} A_{o} \cos(\phi_{sig}-\phi_{ref})
+			\label{eq:PSDDC}
+		\end{equation}
+		
+		In laser spectroscopy, a physical chopper is used to chop the radiation source. This turns the analog signal produced at the detector to become a square wave. The frequency of the chopper is sent into the lock in amplifier to be used for the generation reference wave. The corresponding output DC is then measured and corresponds to the signal. This is technique is highly sensitive and accurate since chopping physically turns the signal into a square wave with the controller setting the frequency of the chopper which is simultaneously sent to the Lock in amplifier. This means that there is no uncertainty as to what reference frequency to use as the reference frequency and signal frequency are physically set to be the same.
+		
+
+\chapter{Experimental Setup}
+	THIS IS GOING TO GET COMPLETELY REVISED TO REMOVE ALL THE TECHNICAL HARDWARE
+	\section{Optical Setup}
+		A diagram of the current setup it shown in figure \autoref{fig:ircease-setup}.
+		The laser in this system is an tunable OPO laser with a fiber pump laser followed by a fiber amplification. The tuning of the laser is done by a crystal which splits an incoming beam into two beams of lower frequency. Both the amplification and splitting  of the beam are 2nd order linear processes. 
+		The resulting output beams are 1\text{$\mu$}m from the pump laser, 3\text{$\mu$}m from the OPO process, and 0.7\text{$\mu$}m from the amplifier. There is one more frequency which corresponds to about 1.5 $\mu$m but it is not exiting the cavity. Only the 3\text{$\mu$}m  is used for spectroscopy. The other two frequencies are largely ignored once everything is aligned. 
+		
+		The lasing system and initial optics is represented by the box OPO Lasing System. Since it is quite complicated and dangerous. What is shown in figure \autoref{fig:ircease-setup} is a simple basic setup that satisfies the conditions for aligning a cavity, locking the cavity with Pound Drever Hall locking technique, and laser spectroscopy of a reference gas.
+		
+		A small portion of the beam is first reflected with the use of a wedge. This small portion is used for performing spectroscopy on the reference methane sample. The reflected beam passes through the methane KBr cell and is chopped. The modulated detection signal and reference signal of a few nanovolts is sent to a lock in amplifier which will output the IR laser absorption spectrum of methane.
+		
+		\begin{figure} [!ht]
+			\centering
+			\resizebox{160mm}{!}{\imginput{images/ircease-setup.pdf_tex}}
+			\caption{}
+			\label{fig:ircease-setup}
+		\end{figure}
+		
+		The beam that transmits through the wedge is passed through a double lens system for modematching of the beam into the cavity. The beam is then passed through a polarizing beam attenuator which will split the beam into an S and P polarized beams. The beam that passes through is P polarized while S polarized beam exit through the escape port. The P polarized 3$\mu$m beam is then passed  through quarter wave plate turning the P polarized light into  right circularly polarized light (RCW) which is then coupled into the resonating cavity. Each time the beam hits a mirror, its circular polarization direction is switched. The resulting back reflections polarization is left circular polarized while the output of the cavity is right circularly polarized. The back reflection will exit through the input window and propagate through the wave plate causing it to now be S polarized. The back reflection now has an orthogonal polarization from the input beam Now the back reflection beam can be separated from input beam at the polarizing attenuator. The back reflection is primarily S polarized and is reflected off to the escape port which is sequentially measured.
+		The tuning of our laser is controlled by Labview using a USB DAQ.
+		
+		Without the quarter wave plate and beam attenuator, the back reflection would follow the exact same path as the input beam making it impossible to measure without blocking the beam.
+		
+		The piezo stroke is controlled by a piezo controller followed by a function generator. The waveform applied to piezo is a saw teeth wave form with a sweep of 0-150V. This voltage sweep corresponds to a stroke distance of 1.5$\mu$. The output beam of the cavity is measured by another one of the liquid nitrogen dewar cool IR InSb detector. 
+		
+		Locking will be attempted once a sufficient signal to noise ratio is achieved. The target is 10:1 ratio but at our current progress, our ratio is at best 2:1. This is largely due to acoustic noise present in our setup due to the fan cooling the fibre amplifier system.
+
+		\subsection{Laser Power}
+			\label{subsection:Laser Power}
+			The intensity spectrum of the laser has a periodic oscillation in intensity which may be due to the periodic polled structure within crystal in the OPO laser. There can also be large spikes in intensity followed by changes in wavenumber at the wavemeter due to the stability of differing modes resonating within the cavity varying during scanning. More time is spent looking for stable lasing conditions of the OPO laser before absorption spectrums are recorded and saved.
+			
+		\subsection{Cavity Setup}
+			\label{subsection:Cavity Setup}
+			The length of our cavity is 1.0m with two spherical symmetric mirrors with radius of curvature of 1.0m. At this cavity length, the free spectral range of our cavity is 0.10$cm^{-1}$. The cavity is symmetric confocal where $R_1=R_2=L_{cavity}$. The reflectivity coefficient at 3$\mu$m of the mirrors are 0.9998 to 0.9999 which correspond to a range of 8000 to 15000. The full width half max of our 3um beam is about 5 Angstroms which corresponds to 2500 finesse. Most of the broadening is most probably due to noise and difficulty in detection of such small stroke sizes and the lasing source being much more broadband then the cavity spectrum. The unexpected increased spread of the measured output relative from the theoretically calculated finesse is that the input beam is broadband while the \autoref{eq:Finess} from \autoref{sec:Optical Cavity and Resonance Properties} is based on the monochromatic wave.
+
+	\section{Programs Used}
+		\subsection{Labview}
+
+		\begin{figure} [!ht]
+			\centering
+			\resizebox{160mm}{!}{\imginput{images/labview-program.pdf_tex}}
+			\caption{The current state of the software}
+			\label{fig:labview-program}
+		\end{figure}
+
+		The labview VI program uses event and state structures to synchronize the input and output voltage signals from a USB DAQ module. There are currently 4 input signals; 1 from the piezo controller, 1 from the power meter and 2 from the lock in amplifier. The Lock in amplifier has dual phase locking hence the two inputs. One of the input channel is used to control the peizo stroke of the pump laser to provide fine tuning of the pump laser for spectroscopy. The program will be upgraded to accept signals from at least 1 of the two liquid nitrogen dewar IR detector. 
+		
+		With event based programming, the program is compiled and the event structure will proceed to idle until it receives an event to notify itself to execute a specific state. There are 5 events, start scan, stop scan, save data, stop VI and the DO IT button all controlled by boolean data type. The start scan boolean will execute the do it button, then instrument initialization for data acquisition then finally followed saving of the array to a data file. The stop button will reverse the direction of the voltage ramp thus bring the wavelength back to the original value. The do it button executes a couple of calculations to estimate the time, max voltage etc of the scan to easily determine the length of a scan before deciding on the setting of a the scan. The stop VI terminates the event structure loop. Commands must be executed 1 at a time but they can be queued up. The program logs all the inputs and outputs into an tab delimited text file with headers name and numbering automatically generated based on the inputs at the control interface. The data file is then exported to IGOR for data processing with a script. 
+
+		\subsection{Bristol Wavemeter}
+			The wavemeter is a Bristol 621 IR wavemeter. It is used to obtain wavelength information. The provided stock Labview VI for controlling the wavemeter is inefficient and to ram intensive for the computer used. It has caused stability issues resulting in crashing of the computer. This is due to the wavemeter being designed to run on the language c. Instead the stock c language program is used to log the wavenumber of the beam. The program can be seen in figure \autoref{fig:labview-program}. Since the Labview and wavemeter program are not synchronized the wavemeter data is logged separately from the Labview data file. This synchronization problem is worked around with automatic data processing using the step function provided in the data file to fit the wavelength to the appropriate absorption signal. In the future, active X will be implemented to properly synchronized programs with Labview.
+			
+			\subsection{IGOR: Data Processing}
+			
+			Just some of raw and processed data outputted from the IGOR script.
+			
+			\begin{figure} [!ht]
+				\centering
+				\resizebox{160mm}{!}{\imginput{images/igor-process.pdf_tex}}
+				\caption{}
+				\label{fig:igor-process}
+				
+			\end{figure}
+			
+		\subsection{Python}
+			A python script was created to simulate the cavity output signal as well as provide a means to quickly calculate theoretical free spectral range and broadness of of a cavity output spectrum. The input parameters are the cavity length, reflectivity of the wavelength and the wavelength of the beam. The script will be updated to have more features as the experiment is progressed and more advanced programming techniques are learned. This script is useful as it allows us to differentiate between 1$\mu m$ and 3$\mu m$ peaks.
+			
+%			\begin{figure} [H]
+%				\centering
+%				\resizebox{170mm}{!}{\input{images/pythonsimulation.pdf_tex}}
+%				\caption{This is an image of two different compilations of the script. The reflectivity of the cavity mirror at 3$\mu m$ is about 0.9998-0.9999 as the manufactuors claim. The shape and distribution of the signal appear on a scope should be similar to the green line.}
+%				\label{fig:pythonsimulation}
+%			\end{figure}
+
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%
+\chapter{Laser Alignment Tutorial}
+	\section{Aligning the IR Cavity}
+		\label{sec:Aligning the IR Cavity}
+		The challenges of aligning the cavity and beam in this experiment is that the 3$\mu m$ beam is in the far IR and the length of the cavity is 1 meter. Far IR wavelengths are low in energy and are difficult to detect while larger cavity length have increased sensitivity to angle tilts. Since the project requires the use of both  FIR and long cavity length, extreme caution and patience is required in aligning IR and long cavity each on their own. The overall aligning process is about 4-5 hours to align the 3um with maximized resonance of the $TEM_{00}$ mode. Many of the procedures stated require many iterations to obtain strong resonance.
+		
+		The output laser beams consist of 0.700 \text{$\mu$m}, 1\text{$\mu$m}, and 3\text{$\mu$m}. The 0.7\text{$\mu$m} beam is ignored, the 1\text{$\mu$m} is used for initial rough alignment while the desired frequency of interest for rovibrational spectroscopy is 3\text{$\mu$m}. 
+		Since the 3\text{$\mu$m} is visible only to specialized IR detectors, rough alignment must be done by use of another well colimated beam. Conveniently, the OPO laser by nature has another well collimated beam with a more easily detectable frequency, the 1\text{$\mu$m} pump beam. Though alignment 1\text{$\mu$m} is still difficult since it is invisible to the eye, it is high enough in energy to be viewed under specialized viewing scopes allowing alignment without the help of detectors. It is much more convient to align a beam that is at least visible with the use of a viewer.
+		
+		\begin{figure} [!ht]
+			\centering
+			\def\svgwidth{\columnwidth}
+			\resizebox{130mm}{!}{\imginput{images/cav-align-improper.pdf_tex}}
+			\caption{The red and blue beam are off center and coming at a tilted angle causing the back reflection beam to not accurately represent the mirror axis. Adjustments to the tilt of the mirrors are therefore unnecessary till the beam is sufficiently propagating through the center of both mirrors. 
+				The process is to continually shift the beam pass the center then angle it towards the center at both input and output mirrors till the beam is propagating through the center of both mirrors.In both a) and b), the red beam must be shifted towards the blue then angle so that the beam hits the center of the window}
+			\label{fig:cav-align-improper}
+		\end{figure}
+		
+		The overall process is to align the cavity mirrors and 1\text{$\mu$m} beam to obtain resonance at atmopsheric pressure then proceed to vacuum the chamber followed by minor realignments with the 1$\mu m$ beam.  The process of alignment is explained in further down in the \autoref{subsec:Alignment of Vacuumed Chamber Cavity}.
+		
+		Once the $TEM_{00}$ is clearly resonanting, the 3\text{$\mu$m} beam is moved into the position of the 1\text{$\mu$m} beam. The 3\text{$\mu$m} should begin to resonate weakly in many modes as the beam is walked towards the cavity axis. This is done with a power meter designed for use with 3$\mu m$, printed circles, post it notes and tape. The power output of the beam is variable by controlling the amplificaion process, as such it can be increased high enough to leave burn marks on paper and post it notes. Large alignment is first done with the power meter and post it notes. The beam must pass through the quarter wave plate and beam attenuator/splitter. With the power meter infront of the wave plate, the beam 3$mu m$ is shifted towrads the center of the cavity and then angled in the oposite direction till the power meter reading is maxmized. The position of the beam is then roughly estimated with a post it note. This is repeated till the beam is close to the center then the printed circles are used to perform fine adjustments.  The trouble now is to determine which resonant peak is the $TEM_{00}$ mode. This was done visually by the use of a scope for the 1$\mu m$ since the $TEM_{00}$ is just a singular bright dot. The 3\text{$\mu$m} is not visible with a viewing scope so  the detector was instead moved vertically and horizontally with a micrometer stage. See \autoref{subsec:Mode Labelling}.
+	
+		\subsection{Alignment of 1m Vacuumed Chamber Cavity}
+		\label{subsec:Alignment of Vacuumed Chamber Cavity}
+		To align a cavity, the beam position must propagate roughly through the center of the mirrors and along the cavity axis. This is difficult since good cavity mirrors are expensive. The pair in our cavity together cost 2500 US dollars, thus interaction with the cavity mirrors must be minimized to avoid damaging them. Paper and tape on the other hand is cheap and plentiful. 
+		
+		For this experiment, the mirrors sit on a flange in a mirror holder with a circular opening that about the same size as the mirrors. Circles of the same size as the mirrors were printed and taped at the opening so that the centers of the circles matches the center of the mirrors. These printed circles are taped to both windows of the mirror holder to provide a means of scattering the beam at both ends. This allows for visual alignment since the location of the beam scattering from the paper is roughly where the beam is hitting relative the center of the mirror. 
+		
+		The beam is first aligned so that it hits the center of the output mirror (or out circle). Most likely the beam is most likely not going through the center of the input mirror, if it is rough alignment is done, its 99.99 \% of the time not if your cavity is 1.0m long. The input window is now placed back on the flange and the beam is shifted towards the center then angled so that it hits the center of the input window. Now the beam is slightly off center from the output mirror and the beam is again shifted towards the center then angled towards the center. Then the input mirror is removed and the beam is aligned again so that it hits the center of the input window. This process is repeated until the beam propagation axis is through the center of both mirrors. 
+		
+		Although the beam is going the center of the mirrors, it cannot resonate until it close to the cavity axis of the mirrors. Since the beam is roughly going through the center of the mirrors, the back reflections of both mirrors can be used to "move" the central axis of both axis. When both back reflection are aligned, the cavity axis is now well defined and is approximately defined by the back reflections. With the cavity now aligned with the input beam, and resonance should be detectable and close to the the $TEM_{00}$ mode. Now fine adjustments can be made to the mirrors and beam based on the mode that is strongly resonating within the cavity. Refer to \autoref{ssec:HowToAlignACavity} on how to tell higher modes can give information about types of misalignment's and modematching.
+		
+		In summary, the process is to use a beam that is well collimated and visible frequency either by the naked eye or viewing scope and align it so that goes through the center of both cavity mirrors. Once this is done, the back reflection of both mirrors now gives a rough estimate of where the cavity axis is located so the back reflections are aligned to input beam thus setting the cavity axis close to the propagation axis of the input beam. How this process is done will varies depending on the type of laser and constraints on the cavity mirrors.
+		
+		\begin{figure} [!ht]
+			\centering
+			\def\svgwidth{\columnwidth}
+			\resizebox{130mm}{!}{\imginput{images/cav-align-proper.pdf_tex}}
+			\caption{After sufficient iterations of shifting and changing tilt angles of the beam, the cavity axis, mirror axes, beam input and back reflection propagation axes should all be aligned allowing for resonance. }
+			\label{fig:cav-align-proper}
+		\end{figure}
+
+		\subsection{Mode Labelling}
+			\label{subsec:Mode Labelling}
+			In this section, labeling of the $TEM_{00}$ mode will be discussed. For the 3$\mu$m beam, the peak corresponding to the $TEM_{00}$ mode was determined by checking the spatial signal intensity distribution. Visual means is not possible as 3$\mu$m is high only for detection with detectors. Each mode has its own transverse spatial distribution which are characterized by Gaussian distribution multiplied by polynomial factors. The result in every mode but the $TEM_{00}$ possessing nodes and can therefore be determined by spatially examining the intensity distribution of each peak and locating the resonance peak that only has 1 maximum. 
+			
+			This was done by sweeping the detector vertically and horizontally. From \autoref{fig:mode-label}, the peaks circled in black is the desired $TEM_{00}$ mode. This figure illustrates what was observed along a horizontal axis. The vertical was not shown as it detector is not on a vertical micrometer stage.
+			
+			\begin{figure} [!ht]
+				\centering
+				\def\svgwidth{\columnwidth}
+				\resizebox{160mm}{!}{\imginput{images/mode-label.pdf_tex}}
+				\caption{The target is to determine which node is the $TEM_{00}$, which is purely Gaussian. In this figure, only the horizontal distribution of the $TEM_{00}$ and maybe the $TEM_{10}$ is shown. If the adjacent mode is the $TEM_{10}$ mode, than there is mis alignment along the horizontal direction.}
+				\label{fig:mode-label}
+			\end{figure}
+			
+			Only the horizontal displacement of the detector is shown since the detect is not mounted on a vertical micrometer stage.						
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------%
+						
+%%%%%BIBLIOGRAPHY%%%%%
+\input{bibliography}		
+\end{document}
+

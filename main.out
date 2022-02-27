@@ -1,0 +1,132 @@
+\BOOKMARK [0][-]{chapter*.2}{Preface}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introduction to Laser Spectroscopy}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Spectroscopy Intro}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Introduction to Lasers and Optics}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{Introduction of Tools to Learn}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.4}{Basic Direct Absorption Spectrosopy Setup}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.5}{Advance Techniques}{chapter.1}% 7
+\BOOKMARK [-1][-]{part.1}{I Spectroscopy}{}% 8
+\BOOKMARK [0][-]{chapter.2}{Fundamentals of Spectroscopy}{part.1}% 9
+\BOOKMARK [1][-]{section.2.1}{Infrared and Microwave Spectroscopy}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.2}{Rovibrational Spectrocopy}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.1}{Rotational Spectroscopy}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.2}{Center of Mass Frame}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.3}{Angular Momentum and Velocity}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.4}{Inertia Tensor}{section.2.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.5}{Rotational Energy}{section.2.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.2.5.1}{Eigen Values and Ladder Operations}{subsection.2.2.5}% 17
+\BOOKMARK [2][-]{subsection.2.2.6}{Angular Momentum Quantum Numbers}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.7}{Peterbation Theory}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.8}{Molecular Spinning Tops}{section.2.2}% 20
+\BOOKMARK [-1][-]{part.2}{II Optics}{}% 21
+\BOOKMARK [0][-]{chapter.3}{Gaussian Beam}{part.2}% 22
+\BOOKMARK [1][-]{section.3.1}{Gaussian Beam Parameters and Factors}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.2}{Guoy Phase}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.3}{Divergence and Spread}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.4}{Rayleigh Length}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.5}{Polarization}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.6}{Complex Electric Field}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.7}{Gaussian Beam is a Mathematical Model}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.8}{Intensity and Power}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.9}{K vector}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.10}{Wavefront and Curvature}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.11}{ABCD Law and Cascade Systems}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.12}{Gaussian Modes}{chapter.3}% 34
+\BOOKMARK [0][-]{chapter.4}{Important Optical Systems}{part.2}% 35
+\BOOKMARK [1][-]{section.4.1}{Thin Lens and Spherical Mirrors}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.1.1}{Double Lens System}{section.4.1}% 37
+\BOOKMARK [1][-]{section.4.2}{Optical Cavity and Resonance Properties}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.2.1}{Input Beam and Cavity Coupling}{section.4.2}% 39
+\BOOKMARK [1][-]{section.4.3}{Cavity Alignment}{chapter.4}% 40
+\BOOKMARK [2][-]{subsection.4.3.1}{Resonance Stability}{section.4.3}% 41
+\BOOKMARK [2][-]{subsection.4.3.2}{Beam Displacement and Mode Matching}{section.4.3}% 42
+\BOOKMARK [0][-]{chapter.5}{Laser Absorption Spectroscopy}{part.2}% 43
+\BOOKMARK [1][-]{section.5.1}{Direct Absorption Spectroscopy}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.2}{Cavity Enhanced Absorption Spectroscopy}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.3}{Frequency Modulation Spectroscopy}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.4}{NICE-OHMS}{chapter.5}% 47
+\BOOKMARK [0][-]{chapter.6}{Absorption and Dispersion}{part.2}% 48
+\BOOKMARK [1][-]{section.6.1}{Factors in Intensity}{chapter.6}% 49
+\BOOKMARK [1][-]{section.6.2}{Factors in Resolution}{chapter.6}% 50
+\BOOKMARK [2][-]{subsection.6.2.1}{Coherent Excitation}{section.6.2}% 51
+\BOOKMARK [2][-]{subsection.6.2.2}{Lifetime}{section.6.2}% 52
+\BOOKMARK [2][-]{subsection.6.2.3}{Distributions}{section.6.2}% 53
+\BOOKMARK [2][-]{subsection.6.2.4}{Natural Linewidth}{section.6.2}% 54
+\BOOKMARK [2][-]{subsection.6.2.5}{Doppler Broadening}{section.6.2}% 55
+\BOOKMARK [2][-]{subsection.6.2.6}{Pressure Broadening}{section.6.2}% 56
+\BOOKMARK [2][-]{subsection.6.2.7}{Transit-Team Broadening}{section.6.2}% 57
+\BOOKMARK [2][-]{subsection.6.2.8}{Saturation and Power Broadening}{section.6.2}% 58
+\BOOKMARK [0][-]{chapter.7}{Frequency Comb}{part.2}% 59
+\BOOKMARK [-1][-]{part.3}{III Toolkit}{}% 60
+\BOOKMARK [0][-]{chapter.8}{Theoretical Techniques}{part.3}% 61
+\BOOKMARK [1][-]{section.8.1}{Vectors and Dual Vectors}{chapter.8}% 62
+\BOOKMARK [1][-]{section.8.2}{Coordinate System}{chapter.8}% 63
+\BOOKMARK [1][-]{section.8.3}{Einstein Notation}{chapter.8}% 64
+\BOOKMARK [1][-]{section.8.4}{Probability in Quantum Mech.}{chapter.8}% 65
+\BOOKMARK [2][-]{subsection.8.4.1}{Expectation Value}{section.8.4}% 66
+\BOOKMARK [1][-]{section.8.5}{Solution Space}{chapter.8}% 67
+\BOOKMARK [1][-]{section.8.6}{Tensors Products}{chapter.8}% 68
+\BOOKMARK [1][-]{section.8.7}{Expectation Value and Variance}{chapter.8}% 69
+\BOOKMARK [1][-]{section.8.8}{Sample Space}{chapter.8}% 70
+\BOOKMARK [1][-]{section.8.9}{Distributions}{chapter.8}% 71
+\BOOKMARK [2][-]{subsection.8.9.1}{Boltzmann Distribution}{section.8.9}% 72
+\BOOKMARK [2][-]{subsection.8.9.2}{Gaussian Distribution}{section.8.9}% 73
+\BOOKMARK [2][-]{subsection.8.9.3}{Lorentian Distribution}{section.8.9}% 74
+\BOOKMARK [2][-]{subsection.8.9.4}{Delta "Distribution"}{section.8.9}% 75
+\BOOKMARK [2][-]{subsection.8.9.5}{Exponential Distribution}{section.8.9}% 76
+\BOOKMARK [2][-]{subsection.8.9.6}{Binomials Distribution}{section.8.9}% 77
+\BOOKMARK [2][-]{subsection.8.9.7}{Poisson Distribution}{section.8.9}% 78
+\BOOKMARK [2][-]{subsection.8.9.8}{Geometric Distribution}{section.8.9}% 79
+\BOOKMARK [1][-]{section.8.10}{Probabilistic Convolutions}{chapter.8}% 80
+\BOOKMARK [1][-]{section.8.11}{Fourier Analysis}{chapter.8}% 81
+\BOOKMARK [2][-]{subsection.8.11.1}{Fourier Space}{section.8.11}% 82
+\BOOKMARK [1][-]{section.8.12}{Group velocity and Beat Frequency}{chapter.8}% 83
+\BOOKMARK [1][-]{section.8.13}{Combinatorics}{chapter.8}% 84
+\BOOKMARK [2][-]{subsection.8.13.1}{Permutation}{section.8.13}% 85
+\BOOKMARK [0][-]{chapter.9}{Fundamentals of Programming Languages}{part.3}% 86
+\BOOKMARK [1][-]{section.9.1}{Python}{chapter.9}% 87
+\BOOKMARK [2][-]{subsection.9.1.1}{Installation of Python}{section.9.1}% 88
+\BOOKMARK [2][-]{subsection.9.1.2}{Python Interpreter and Editor}{section.9.1}% 89
+\BOOKMARK [2][-]{subsection.9.1.3}{Basic Data Types of Python}{section.9.1}% 90
+\BOOKMARK [2][-]{subsection.9.1.4}{Basic Operations of Python}{section.9.1}% 91
+\BOOKMARK [2][-]{subsection.9.1.5}{Basic Data Structures of Python}{section.9.1}% 92
+\BOOKMARK [2][-]{subsection.9.1.6}{Functions, Methods and Arguements in Python}{section.9.1}% 93
+\BOOKMARK [2][-]{subsection.9.1.7}{Loops and If Statements in Python}{section.9.1}% 94
+\BOOKMARK [2][-]{subsection.9.1.8}{Global and Local Scope}{section.9.1}% 95
+\BOOKMARK [2][-]{subsection.9.1.9}{Folder and File in Python}{section.9.1}% 96
+\BOOKMARK [2][-]{subsection.9.1.10}{Parsing Files in Python}{section.9.1}% 97
+\BOOKMARK [1][-]{section.9.2}{Getting Started with Markdown}{chapter.9}% 98
+\BOOKMARK [1][-]{section.9.3}{Basics of C for Arduino}{chapter.9}% 99
+\BOOKMARK [1][-]{section.9.4}{Databases and SQLite3}{chapter.9}% 100
+\BOOKMARK [0][-]{chapter.10}{Essential Programming Packages}{part.3}% 101
+\BOOKMARK [1][-]{section.10.1}{Python Standard Library Packages}{chapter.10}% 102
+\BOOKMARK [2][-]{subsection.10.1.1}{datetime}{section.10.1}% 103
+\BOOKMARK [2][-]{subsection.10.1.2}{sqlite3}{section.10.1}% 104
+\BOOKMARK [2][-]{subsection.10.1.3}{copy}{section.10.1}% 105
+\BOOKMARK [2][-]{subsection.10.1.4}{os.path}{section.10.1}% 106
+\BOOKMARK [2][-]{subsection.10.1.5}{urllib}{section.10.1}% 107
+\BOOKMARK [1][-]{section.10.2}{Scientific Python Stack}{chapter.10}% 108
+\BOOKMARK [2][-]{subsection.10.2.1}{Numpy}{section.10.2}% 109
+\BOOKMARK [0][-]{chapter.11}{Experimental Techniques}{part.3}% 110
+\BOOKMARK [1][-]{section.11.1}{Modulation and Heterodyne Principle}{chapter.11}% 111
+\BOOKMARK [2][-]{subsection.11.1.1}{Modulation}{section.11.1}% 112
+\BOOKMARK [2][-]{subsection.11.1.2}{Demodulation by Heterodyne Principle}{section.11.1}% 113
+\BOOKMARK [1][-]{section.11.2}{Feed Back Control Theory}{chapter.11}% 114
+\BOOKMARK [1][-]{section.11.3}{Pound Drever Hall Locking Technique}{chapter.11}% 115
+\BOOKMARK [2][-]{subsection.11.3.1}{PI controller}{section.11.3}% 116
+\BOOKMARK [1][-]{section.11.4}{Lock in Amplification}{chapter.11}% 117
+\BOOKMARK [-1][-]{part.4}{IV Project Design Principles}{}% 118
+\BOOKMARK [0][-]{chapter.12}{Experimental Setup}{part.4}% 119
+\BOOKMARK [1][-]{section.12.1}{Optical Setup}{chapter.12}% 120
+\BOOKMARK [2][-]{subsection.12.1.1}{Laser Power}{section.12.1}% 121
+\BOOKMARK [2][-]{subsection.12.1.2}{Cavity Setup}{section.12.1}% 122
+\BOOKMARK [1][-]{section.12.2}{Programs Used}{chapter.12}% 123
+\BOOKMARK [2][-]{subsection.12.2.1}{Labview}{section.12.2}% 124
+\BOOKMARK [2][-]{subsection.12.2.2}{Bristol Wavemeter}{section.12.2}% 125
+\BOOKMARK [2][-]{subsection.12.2.3}{IGOR: Data Processing}{section.12.2}% 126
+\BOOKMARK [2][-]{subsection.12.2.4}{Python}{section.12.2}% 127
+\BOOKMARK [-1][-]{part.5}{V Laser Alignment}{}% 128
+\BOOKMARK [0][-]{chapter.13}{Laser Alignment Tutorial}{part.5}% 129
+\BOOKMARK [1][-]{section.13.1}{Aligning the IR Cavity}{chapter.13}% 130
+\BOOKMARK [2][-]{subsection.13.1.1}{Alignment of 1m Vacuumed Chamber Cavity}{section.13.1}% 131
+\BOOKMARK [2][-]{subsection.13.1.2}{Mode Labelling}{section.13.1}% 132
