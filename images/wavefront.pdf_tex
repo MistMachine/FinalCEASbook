@@ -1,0 +1,81 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'wavefront.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{389.09902093bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.77848381)%
+    \put(-0.3618027,0.69328273){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{2.00421403\unitlength}\raggedright \end{minipage}}}%
+    \put(-0.09388184,0.75351302){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.71552417\unitlength}\raggedright \end{minipage}}}%
+    \put(1.65694975,0.00167307){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.03323044\unitlength}\raggedright \end{minipage}}}%
+    \put(0.00061738,0.70678265){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.3198435\unitlength}\raggedright \end{minipage}}}%
+    \put(0.67318505,0.60964706){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15713962\unitlength}\raggedright \end{minipage}}}%
+    \put(-0.21825164,0.8314048){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.12494325\unitlength}\raggedright \end{minipage}}}%
+    \put(1.98573002,0.40770537){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.24403639\unitlength}\raggedright \end{minipage}}}%
+    \put(1.96807637,0.39109021){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.25026717\unitlength}\raggedright \end{minipage}}}%
+    \put(1.98469159,0.40562851){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.23884417\unitlength}\raggedright \end{minipage}}}%
+    \put(0.80557991,1.15775489){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.24403639\unitlength}\raggedright \end{minipage}}}%
+    \put(0.78792626,1.14113974){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.25026717\unitlength}\raggedright \end{minipage}}}%
+    \put(0.80454148,1.15567803){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.23884417\unitlength}\raggedright \end{minipage}}}%
+    \put(0.00007582,0.73571897){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.32711269\unitlength}\raggedright a) Plane Wave - \\ The wavefronts of plane waves are infinite.\\ $R=\infty$\\ \end{minipage}}}%
+    \put(0.00039739,0.24821878){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.35813662\unitlength}\raggedright c) Gaussian Beam -\\ Gaussian beam wavefronts are mixture of plane waves and spherical waves.\\ Near the focus is the plane wave limit while far from the focus is the spherical limit\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{wavefront.pdf}}%
+    \put(0.60409922,0.76442891){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{x}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{wavefront.pdf}}%
+    \put(0.00174939,0.47823147){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.32711264\unitlength}\raggedright b) Spherical Wave - \\ Linear increasing wavefront radius.\\ Curvature of wavefront continually increases\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{wavefront.pdf}}%
+    \put(-0.08765113,0.60293735){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.43303486\unitlength}\raggedright \end{minipage}}}%
+    \put(-0.0263824,0.52609184){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(-0.22888072,0.57074528){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.39461212\unitlength}\raggedright \end{minipage}}}%
+    \put(0.57124726,-0.28338225){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.85635102,0.65715829){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.18172924\unitlength}\raggedright \color{red}$R=\infty$\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{wavefront.pdf}}%
+    \put(0.68670888,0.49181589){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.31776667\unitlength}\raggedright \color{red} $R=R_o$\end{minipage}}}%
+    \put(-0.03780539,0.03282665){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.31257433\unitlength}\raggedright \end{minipage}}}%
+    \put(0.27225883,0.0045862){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.81506982\unitlength}\raggedright \end{minipage}}}%
+  \end{picture}%
+\endgroup%

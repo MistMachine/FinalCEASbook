@@ -1,0 +1,60 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'mode-label.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{595.27559055bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.41428571)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{mode-label.pdf}}%
+    \put(0.06143613,1.20760394){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.2745427\unitlength}\raggedright Each color represents the detector at various displacement relative to a single point. A scope image was saved every 0.050 $\mu$m.\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{mode-label.pdf}}%
+    \put(0.06239607,1.05497356){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.31678008\unitlength}\raggedright The signal circled in black belongs to the $TEM_{00}$ mode since it has no nodes.\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{mode-label.pdf}}%
+    \put(0.32637945,0.97817838){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{ }}}%
+    \put(0.06335601,0.95609979){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.39741493\unitlength}\raggedright The signal in green has a node at around 0.200$\mu$m. This is not the peak we want to maximize. It could possibly be $TEM_{10}$\end{minipage}}}%
+  \end{picture}%
+\endgroup%

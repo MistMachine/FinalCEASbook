@@ -1,0 +1,71 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'scope_diagram.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{396.69305473bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.55068975)%
+    \put(0.20375844,0.49323231){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Global}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{scope_diagram.pdf}}%
+    \put(0.14635994,0.31683552){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lb]{\smash{function}}}}%
+    \put(0.41998359,0.3930559){\color[rgb]{0,0,0}\rotatebox{-45}{\makebox(0,0)[lb]{\smash{loop}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{scope_diagram.pdf}}%
+    \put(0.01550554,0.40464275){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15800269\unitlength}\raggedright \end{minipage}}}%
+    \put(0.31516071,0.26963786){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{function}}}}%
+    \put(-0.00475119,0.21855069){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{local 1}}}%
+    \put(0.22887668,0.21963109){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{local 2}}}%
+    \put(0.45359166,0.21882093){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{local 3}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{scope_diagram.pdf}}%
+    \put(0.46011149,0.12449091){\color[rgb]{0,0,0}\rotatebox{45}{\makebox(0,0)[lb]{\smash{loop}}}}%
+    \put(0.56464517,0.19726424){\color[rgb]{0,0,0}\rotatebox{-45}{\makebox(0,0)[lb]{\smash{conditionals}}}}%
+    \put(0.56183383,0.15927881){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{loop}}}}%
+    \put(0.05093868,0.07968899){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{function}}}}%
+    \put(0.73093469,0.21763322){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Level 1}}}%
+    \put(0.73215827,0.4831362){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Level 0}}}%
+    \put(0.73582871,0.00107086){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Level 2}}}%
+  \end{picture}%
+\endgroup%

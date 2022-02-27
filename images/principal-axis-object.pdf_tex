@@ -1,0 +1,90 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'principal-axis-object.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{446.39303154bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.12603296)%
+    \put(0.06272798,0.99426456){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.22860058\unitlength}\raggedright \end{minipage}}}%
+    \put(0.0797665,1.0020739){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.27758648\unitlength}\raggedright \end{minipage}}}%
+    \put(0.25949772,0.62948675){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.2259015\unitlength}\raggedright \end{minipage}}}%
+    \put(0.0897057,1.01272301){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.17251537\unitlength}\raggedright \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{principal-axis-object.pdf}}%
+    \put(0.20405263,0.97887347){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.28607233\unitlength}\raggedright \Large \bfseries z \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{principal-axis-object.pdf}}%
+    \put(0.72472542,0.97887347){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.28607233\unitlength}\raggedright \Large \bfseries z\end{minipage}}}%
+    \put(0.94797385,0.76720957){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.02730292\unitlength}\raggedright \Large \bfseries y \end{minipage}}}%
+    \put(0.57941959,0.6101419){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.28607233\unitlength}\raggedright \Large \bfseries x \end{minipage}}}%
+    \put(0.05767957,0.6101419){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.28607233\unitlength}\raggedright \Large \bfseries x \end{minipage}}}%
+    \put(0.42730243,0.76720957){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.28607233\unitlength}\raggedright \Large \bfseries y \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{principal-axis-object.pdf}}%
+    \put(0.55663315,0.56201316){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.41155991\unitlength}\raggedright \textbf{(B)}\\ After diagonalizing the inertia tensor, we create a new basis set for the inertia tensor that use a recombination of y and z unit vectors to create two new unit vectors, $\hat{b}$ and $\hat{c}$. The $\hat{a}$ unit vector is essentially the same as $\hat{x}$ unit vector \end{minipage}}}%
+    \put(0.23351719,0.93211737){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29218751\unitlength}\raggedright $\vec{\omega}_3$\end{minipage}}}%
+    \put(0.86434261,0.97756876){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.10742796\unitlength}\raggedright $ \vec{L}_c\parallel \vec{\omega}_c$\end{minipage}}}%
+    \put(0.40288737,0.79546451){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29218751\unitlength}\raggedright $\vec{\omega_1}$\end{minipage}}}%
+    \put(0.91605572,0.81285046){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.08650574\unitlength}\raggedright $ \vec{L}_c\parallel \vec{\omega}_b$\end{minipage}}}%
+    \put(0.6229708,0.6186895){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29218751\unitlength}\raggedright $ \vec{L}_a\parallel \vec{\omega}_a$\end{minipage}}}%
+    \put(0.09577866,0.95895872){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29218751\unitlength}\raggedright $\vec{L}_3$\end{minipage}}}%
+    \put(0.35294312,0.70103539){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29218751\unitlength}\raggedright $\vec{L}_3$\end{minipage}}}%
+    \put(0.107522,0.62368417){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.29218751\unitlength}\raggedright $ \vec{L}_1\parallel \vec{\omega}_1$\end{minipage}}}%
+    \put(0.38835163,1.13240319){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.46150646\unitlength}\raggedright \Large Random object\end{minipage}}}%
+    \put(0.01026814,1.04549613){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.41555564\unitlength}\raggedright Non-diagonal Inertia tensor using  $\hat{x}$, $\hat{y}$, and $\hat{z}$ as basis set\end{minipage}}}%
+    \put(0.55517321,1.05248865){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.41255885\unitlength}\raggedright Diagonal Inertia tensor using $\hat{a}$, $\hat{b}$, and $\hat{c}$ basis set\end{minipage}}}%
+    \put(0.92028684,0.86374066){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.03601726\unitlength}\raggedright $\hat{b}$\end{minipage}}}%
+    \put(0.83130052,0.92876123){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.03601726\unitlength}\raggedright $\hat{c}$\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{principal-axis-object.pdf}}%
+    \put(0.20155137,0.11249381){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.71123942\unitlength}\raggedright \end{minipage}}}%
+    \put(-0.01321896,0.56301205){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.50246264\unitlength}\raggedright \end{minipage}}}%
+    \put(-0.00123179,0.55002597){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.50146377\unitlength}\raggedright \end{minipage}}}%
+    \put(-0.00000088,0.5599095){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.49347235\unitlength}\raggedright \textbf{(A)} \\ Angular velocity about the y and z result in angular momentum consisting of y and z components. \\ \textbf{I}$\braket{0,\omega_y,0}=\braket{0,L_y,L_z}$. \\ \textbf{I}$\braket{0,0,\omega_z}=\braket{0,L_y,L_z}$.\\ Rotation about the $\hat{x}$ results in a parallel angular momentum.\\ \textbf{I}$\braket{\omega_x,0,0}=\braket{L_x,0,0}$.\\ \end{minipage}}}%
+    \put(-0.00223072,0.28807051){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.6223345\unitlength}\raggedright $I_{xy}=I_{yz}=I_{xy}=I_{xy}=0$,\\ $I_{yz}=I_{zy} \neq 0$\end{minipage}}}%
+    \put(0.52620421,0.04556542){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.67228107\unitlength}\raggedright \end{minipage}}}%
+    \put(0.6201038,0.21138809){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.39557705\unitlength}\raggedright $\tilde{\textbf{I}} =  \left( \begin{array}{ccc}\\ I_{a} & 0 & 0 \\\\ 0 & I_{b} & 0 \\\\ 0 & 0 & I_{c}\\ \end{array}\right) $\end{minipage}}}%
+    \put(0.06170092,0.20039982){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.37260155\unitlength}\raggedright $\textbf{I} =  \left( \begin{array}{ccc}\\ I_{xx} & 0 & 0  \\\\ 0 & I_{yy} & I_{yz}\\\\ 0 & I_{zy} & I_{zz}\\ \end{array}\right) $\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{principal-axis-object.pdf}}%
+  \end{picture}%
+\endgroup%

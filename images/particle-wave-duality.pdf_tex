@@ -1,0 +1,70 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'particle-wave-duality.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{407.51532418bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.9211833)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{particle-wave-duality.pdf}}%
+    \put(0.0943963,0.62619062){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.32608101\unitlength}\raggedright {\bfseries (A)}\\ Particle nature\\ Photon\end{minipage}}}%
+    \put(0.07407041,0.92816086){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.50303233\unitlength}\raggedright \bfseries \huge Quantum Mechanical Interpretation\end{minipage}}}%
+    \put(0.6097095,0.92764533){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.3786042\unitlength}\raggedright \bfseries \huge Classical Interpretation\\ \end{minipage}}}%
+    \put(0.61627488,0.62618888){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.38298107\unitlength}\raggedright {\bfseries (B)}\\ Wave nature:\\ Electromagnetic Waves\end{minipage}}}%
+    \put(0.24437275,-0.08876829){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.41690231\unitlength}\raggedright \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{particle-wave-duality.pdf}}%
+    \put(0.28595355,-0.22117033){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.28012331\unitlength}\raggedright \end{minipage}}}%
+    \put(0.61436352,0.1338642){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.33045788\unitlength}\raggedright {\bfseries (D)}\\ Particle nature:\\ \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{particle-wave-duality.pdf}}%
+    \put(0.08531252,0.13386229){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.467237\unitlength}\raggedright {\bfseries (C)}\\ Wave nature:\\ Electron P orbital wavefunction\end{minipage}}}%
+    \put(-0.11539066,0.70322488){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{1.21322223\unitlength}\raggedright \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{particle-wave-duality.pdf}}%
+    \put(0.21991084,0.79516986){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.69046028\unitlength}\raggedright \bfseries \LARGE Electromagnetic Radiation\end{minipage}}}%
+    \put(0.0594476,0.78333438){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.3746963,0.50301){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.45629458\unitlength}\raggedright \bfseries \LARGE Electron\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{particle-wave-duality.pdf}}%
+  \end{picture}%
+\endgroup%

@@ -1,0 +1,73 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'photon-electron-transition.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{523.12016649bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.98410948)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{photon-electron-transition.pdf}}%
+    \put(0.1108349,0.57019763){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.53041949\unitlength}\raggedright Photon + Eectron in 1s State\end{minipage}}}%
+    \put(0.70776365,0.5726062){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.36888259\unitlength}\raggedright Electron in 2p State\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{photon-electron-transition.pdf}}%
+    \put(0.56980194,0.02763752){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.53041949\unitlength}\raggedright Photon + Eectron in 1s State\end{minipage}}}%
+    \put(0.04694958,0.02763509){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.36888259\unitlength}\raggedright Electron in 2p State\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{photon-electron-transition.pdf}}%
+    \put(0,0.96668101){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\Large \bfseries (A) Absorption Process}}}%
+    \put(0,0.47518376){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\Large \bfseries (B) Emission Process}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{photon-electron-transition.pdf}}%
+    \put(0.41395294,0.72228319){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$E_2p$}}}%
+    \put(0.41310056,0.64211754){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$E_1p$}}}%
+    \put(0.87566573,0.72228319){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$E_2p$}}}%
+    \put(0.87481335,0.64211754){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$E_1p$}}}%
+    \put(0.24005999,0.17460564){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$E_2p$}}}%
+    \put(0.23920761,0.09443997){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$E_1p$}}}%
+    \put(0.67575121,0.17460564){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$E_2p$}}}%
+    \put(0.67489882,0.09443997){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$E_1p$}}}%
+    \put(0.00971926,0.63751676){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.45945243\unitlength}\raggedright $E_{photon}=E_{2p} - E_{1p}$\end{minipage}}}%
+    \put(0.78357395,0.1867104){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.26582398\unitlength}\raggedright $E_{photon}=E_{2p} - E_{1p}$\end{minipage}}}%
+  \end{picture}%
+\endgroup%

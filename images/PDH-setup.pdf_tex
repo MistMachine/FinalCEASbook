@@ -1,0 +1,94 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'PDH-setup.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{486.09308815bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.72603936)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{PDH-setup.pdf}}%
+    \put(0.85666977,0.31269154){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.1986686\unitlength}\raggedright Function Generator\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{PDH-setup.pdf}}%
+    \put(0.04225357,0.60550641){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.0793499\unitlength}\raggedright OPO\\ Laser\end{minipage}}}%
+    \put(0.53156113,0.72800984){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.10579983\unitlength}\raggedright Quarter Wave Plate\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{PDH-setup.pdf}}%
+    \put(0.17596386,0.60883547){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.16209219\unitlength}\raggedright EOM Phase Modulator\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{PDH-setup.pdf}}%
+    \put(0.24049404,0.2979108){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.16791087\unitlength}\raggedright Modulator Controller\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{PDH-setup.pdf}}%
+    \put(0.26037812,0.11759031){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.10578205\unitlength}\raggedright PI controller\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{PDH-setup.pdf}}%
+    \put(0.65620977,0.41073376){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.11520422\unitlength}\raggedright Amplifier\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{PDH-setup.pdf}}%
+    \put(0.06483688,0.20437468){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.17206712\unitlength}\raggedright Unpolarized \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{PDH-setup.pdf}}%
+    \put(0.06461586,0.23984412){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.12967377\unitlength}\raggedright P polarized\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{PDH-setup.pdf}}%
+    \put(0.06528074,0.27639669){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.17954828\unitlength}\raggedright S Polarized\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{PDH-setup.pdf}}%
+    \put(0.06461776,0.17029205){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.19259163\unitlength}\raggedright Right Circularly Polarized Light\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{PDH-setup.pdf}}%
+    \put(0.06461728,0.10985507){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.18390442\unitlength}\raggedright Left Circularly Polarized \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{PDH-setup.pdf}}%
+    \put(0.06131024,0.31362447){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.17788577\unitlength}\raggedright Analog Signal\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{PDH-setup.pdf}}%
+    \put(0.06497493,0.40272013){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15976973\unitlength}\raggedright Error Signal, DC comp Feedback \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{PDH-setup.pdf}}%
+    \put(0.38976019,0.3345289){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.20116052\unitlength}\raggedright Input Error Signal\end{minipage}}}%
+    \put(0.40064273,0.29671964){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.2452164\unitlength}\raggedright Mixing, Filtering, Amplification\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{PDH-setup.pdf}}%
+    \put(0.37415026,0.23148337){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.21571409\unitlength}\raggedright DC Signal\end{minipage}}}%
+    \put(0.69196333,0.26140801){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.08690033\unitlength}\raggedright Feed Back Signal\end{minipage}}}%
+    \put(0.36415808,0.73168149){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.13989088\unitlength}\raggedright Polarizing Beam Splitter\end{minipage}}}%
+    \put(0.86432005,0.70013276){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.11847433\unitlength}\raggedright Cavity Output Detector\end{minipage}}}%
+    \put(0.44350793,0.46483078){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15340978\unitlength}\raggedright Back Reflection Detector\end{minipage}}}%
+    \put(0.7289233,0.64005619){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.17199291\unitlength}\raggedright Cavity\end{minipage}}}%
+    \put(-0.17189446,0.53889067){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.36794833\unitlength}\raggedright \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{PDH-setup.pdf}}%
+    \put(0.86237389,0.50613508){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14224189\unitlength}\raggedright Amplified Feed Back Signal \end{minipage}}}%
+    \put(0.37826471,0.14860676){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.65831007\unitlength}\raggedright Feedback Signal: $u(t)$\\ Error Signal: $\epsilon (t)$\\ $u(t)=K_{pro}\epsilon (t) + K_{int}\int \epsilon (t) dt$ \end{minipage}}}%
+  \end{picture}%
+\endgroup%

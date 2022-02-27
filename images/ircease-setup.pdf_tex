@@ -1,0 +1,102 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'ircease-setup.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{539.34042541bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.33162425)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{ircease-setup.pdf}}%
+    \put(0.15694722,0.79825738){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14409134\unitlength}\raggedright Complex Optical System\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{ircease-setup.pdf}}%
+    \put(0.09353619,0.30754415){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.109128\unitlength}\raggedright Chopper Cont.\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{ircease-setup.pdf}}%
+    \put(0.04170536,0.08595367){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.07098618\unitlength}\raggedright Signal \\ Input\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{ircease-setup.pdf}}%
+    \put(0.51300322,1.23382893){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.1790547\unitlength}\raggedright Function Generator\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{ircease-setup.pdf}}%
+    \put(0.24586911,0.56828993){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14009593\unitlength}\raggedright Pm-10$\mu m$ detector\end{minipage}}}%
+    \put(0.1847372,1.27953996){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.16845973\unitlength}\raggedright Oscilloscope\end{minipage}}}%
+    \put(0.8035463,1.32081672){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.19176863\unitlength}\raggedright Liquid Nitrogen Dewar Cool IR Detector\end{minipage}}}%
+    \put(0.81191617,0.74575599){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.13589307\unitlength}\raggedright IR Beam Attenuator\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{ircease-setup.pdf}}%
+    \put(0.43241494,0.16176736){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.26169533\unitlength}\raggedright USB Daq\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{ircease-setup.pdf}}%
+    \put(0.39586251,0.11054331){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.08615531\unitlength}\raggedright Various Signal Inputs\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{ircease-setup.pdf}}%
+    \put(0.02096809,0.80862755){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.07151594\unitlength}\raggedright OPO\\ Laser\end{minipage}}}%
+    \put(0.08073647,0.14734727){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.10263714\unitlength}\raggedright Reference Input\end{minipage}}}%
+    \put(0.12652208,0.08366728){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.0789393\unitlength}\raggedright Signal Output\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{ircease-setup.pdf}}%
+    \put(0.55018593,0.13211898){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.107009\unitlength}\raggedright Pump Laser Piezo Control\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{ircease-setup.pdf}}%
+    \put(0.41404081,0.90927959){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.1123065\unitlength}\raggedright Beam Splitting Wedge\end{minipage}}}%
+    \put(0.67052685,0.51726638){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14726981\unitlength}\raggedright Pair of Planoconcave mirrors for modematching\end{minipage}}}%
+    \put(0.62170185,0.31435214){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.23944593\unitlength}\raggedright Pair of mirrors for beam alignment\end{minipage}}}%
+    \put(0.80393503,0.88067324){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.13667487\unitlength}\raggedright Quarter Wave Plate\end{minipage}}}%
+    \put(0.31762677,0.98874173){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.55650148,0.99127218){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.21295855\unitlength}\raggedright Quarter Wave Plate and Polarizing Beam splitter to seperate the back reflection from the input beam for Locking of error signal\end{minipage}}}%
+    \put(0.90972892,1.10837647){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.12194138\unitlength}\raggedright Resonating Cavity\end{minipage}}}%
+    \put(0.24171736,1.19671189){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.13934677\unitlength}\raggedright Displaying Analog Signals\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{ircease-setup.pdf}}%
+    \put(0.50393711,1.08802397){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.23732688\unitlength}\raggedright To Sweep the Cavity Length with Voltage Controlled Piezo\end{minipage}}}%
+    \put(0.10360873,0.79167564){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.0444988\unitlength}\raggedright +\end{minipage}}}%
+    \put(0.81276668,0.68821909){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.16848931\unitlength}\raggedright Seperates Beam in to S and P polarized radiation\end{minipage}}}%
+    \put(0.72885899,0.72927318){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.09889122\unitlength}\raggedright Back Escape Port \end{minipage}}}%
+    \put(0.87270078,0.46899338){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.11312564\unitlength}\raggedright Unpolarized Radiation\end{minipage}}}%
+    \put(-0.04789907,1.01734808){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.24686238\unitlength}\raggedright \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{ircease-setup.pdf}}%
+    \put(0.06245193,0.89297043){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15507949\unitlength}\raggedright Unpolarized \end{minipage}}}%
+    \put(0.06225273,0.91636924){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.1168715\unitlength}\raggedright P polarized\end{minipage}}}%
+    \put(0.06285197,0.98655715){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.16182205\unitlength}\raggedright S Polarized\end{minipage}}}%
+    \put(0.06225445,0.96316179){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.25621829\unitlength}\raggedright Right Circularly Polarized \end{minipage}}}%
+    \put(0.06225402,0.93967398){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.34162434\unitlength}\raggedright Left Circularly Polarized \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{ircease-setup.pdf}}%
+    \put(0.0788329,0.67968563){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.19176863\unitlength}\raggedright Liquid Nitrogen Dewar Cool IR Detector\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{ircease-setup.pdf}}%
+    \put(0.81821613,0.12972079){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.13561541\unitlength}\raggedright Labview\end{minipage}}}%
+  \end{picture}%
+\endgroup%
